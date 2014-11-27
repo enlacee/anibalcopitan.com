@@ -2,4 +2,4 @@
 
 [source project](http://startbootstrap.com/template-overviews/freelancer/)
 
-Web project 2014, list in timeline
+Web project 2014, all list timeline
