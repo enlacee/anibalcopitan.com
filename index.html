@@ -124,42 +124,38 @@
             <div id="owl-demo" class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="img-responsive">
-                        <img src="img/skills/zf2.png" title="Zend-Framework" alt="Zend-Framework">
+                        <img src="img/skills/python.png" title="Python" alt="Python">
+                        <div class="textoverlay">
+                            <h2>Python</h2>
+                            <p>La navaja suiza</p>
+                        </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="img-responsive">
-                        <img src="img/skills/ci.png" title="Code-Igniter" alt="Code-Igniter">
+                        <img src="img/skills/javascript.png" title="Javascript" alt="Javascript">
+                        <div class="textoverlay">
+                            <h2>Javascript</h2>
+                            <p>Multiplataforma</p>
+                        </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="img-responsive">
-                        <img src="img/skills/ubuntu.png" alt="ubuntu">
+                        <img src="img/skills/php.png" title="PHP" alt="PHP">
+                        <div class="textoverlay">
+                            <h2>PHP</h2>
+                            <p>Zend-Framework, Laravel</p>
+                        </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="img-responsive">
-                        <img src="img/skills/wordpress.png" alt="wordpress">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img-responsive">
-                        <img src="img/skills/github.png" title="github" alt="github">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img-responsive">
-                        <img src="img/skills/jquery.png" alt="jquery">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img-responsive">
-                        <img src="img/skills/bootsrap.png" alt="bootstrap">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="img-responsive">
-                        <img src="img/skills/aws.png" alt="aws-amazon">
+                        <img src="img/skills/linux.png" title="LINUX" alt="LINUX">
+                        <div class="textoverlay">
+                            <h2>LINUX</h2>
+                            <p>El todo</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -579,7 +575,8 @@
 $(document).ready(function() {
 
 $("#owl-demo").owlCarousel({
-    items:5,
+    items:2,
+    // autoHeight: true
     /*autoPlay : true,*/
     });
 });
@@ -588,22 +585,37 @@ $("#owl-demo").owlCarousel({
 #owl-demo .item {
     background: #fff;
     padding: 20px 0px;
-    margin: 5px;
+    /*margin: 5px;*/
     color: black;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    border:1px solid black;
     text-align: center;
+    background: gray;
 }
+/*#owl-demo .item:nth-child(2n){
+    border-left: 1px solid black;
+}*/
 
 #owl-demo .item div img {
-    height: 70px;
+    /*height: 70px;*/
 }
+.owl-carousel div .textoverlay{
+    color: #FFF;
+    font-size: 12px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 500px;
+    margin: 0 auto;
+}
+
 @media(max-width:768px) {
 	section h2 {
 		font-size: 1.2em;
 	}
+    #owl-demo .item div img {
+        width: 250px;
+    }
+    .owl-carousel div .textoverlay{
+        width: 250px;
+    }
 }
     </style>
 </body>
