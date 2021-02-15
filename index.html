@@ -172,12 +172,24 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <br/>
+                    <br/>
+                    <h2>&Uacuteltimos art&iacuteculos</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row" id="blogger-content">
+            </div>
         </div>
     </section>
 
     <!-- Portfolio Grid Section -->
     <!-- Footer -->
     <footer class="text-center">
+
         <div class="footer-below">
             <div class="container">
                 <div class="row">
@@ -204,65 +216,93 @@
 
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <!--<script src="js/jqBootstrapValidation.js"></script>-->
-    <!--<script src="js/contact_me.js"></script>-->
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
 
     <!-- Include owl.carousel js plugin -->
     <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
     <script type="text/javascript">
-$(document).ready(function() {
+        $(document).ready(function() {
+            $("#owl-demo").owlCarousel({
+                items:2,
+                // autoHeight: true
+                /*autoPlay : true,*/
+            });
+        });
 
-$("#owl-demo").owlCarousel({
-    items:2,
-    // autoHeight: true
-    /*autoPlay : true,*/
-    });
-});
+        // script read feed
+        function get(json) {
+            var items = [];
+            json.feed.entry.forEach( function(element, index, array) {
+                if ( index < 5) {
+                    var listHTML = "<li><a href="+ element.link[element.link.length - 1].href +">";
+                    listHTML += '<h3>' + element.title["$t"] + '</h3>';
+                    listHTML += "</a></li>"
+                    items.push( listHTML );
+                }
+            });
+
+            if ( items.length > 0 ) {
+                document.querySelector( '#blogger-content' ).innerHTML = '<ul>' + items.join("") + '</ul>';
+            } else {
+                document.querySelector( '#blogger-content' ).innerHTML = 'No se encontrar&oacuten resultados.'
+            }
+        }
     </script>
+    <script src="https://blog.anibalcopitan.com/feeds/posts/default?alt=json-in-script&callback=get"></script>
+    
     <style type="text/css">
-#owl-demo .item {
-    background: #fff;
-    padding: 20px 0px;
-    /*margin: 5px;*/
-    color: black;
-    text-align: center;
-    background: gray;
-}
-/*#owl-demo .item:nth-child(2n){
-    border-left: 1px solid black;
-}*/
+        #owl-demo .item {
+            background: #fff;
+            padding: 20px 0px;
+            color: black;
+            text-align: center;
+            background: gray;
+        }
 
-#owl-demo .item div img {
-    /*height: 70px;*/
-    filter: grayscale(100%);
-}
-.owl-carousel div .textoverlay{
-    color: #FFF;
-    font-size: 12px;
-    display: block;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 400px;
-    margin: 0 auto;
-}
+        #owl-demo .item div img {
+            /*height: 70px;*/
+            filter: grayscale(100%);
+        }
+        .owl-carousel div .textoverlay{
+            color: #FFF;
+            font-size: 12px;
+            display: block;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 400px;
+            margin: 0 auto;
+        }
 
-@media(max-width:768px) {
-	section h2 {
-		font-size: 1.2em;
-	}
-    #owl-demo .item div img {
-        width: 250px;
-    }
-    .owl-carousel div .textoverlay{
-        width: 250px;
-    }
-}
+        @media(max-width:768px) {
+            section h2 {
+                font-size: 1.2em;
+            }
+            #owl-demo .item div img {
+                width: 250px;
+            }
+            .owl-carousel div .textoverlay{
+                width: 250px;
+            }
+        }
+
+        /* blogger section */
+        #blogger-content ul{
+            padding: 0;
+            margin: 0;
+        }
+        #blogger-content li{
+            border-bottom-style: dotted;
+            border-bottom-width: 1px;
+            list-style-type: none;
+        }
+        #blogger-content li:last-child{
+            padding: 0;
+            border-bottom: none;
+        }
+        #blogger-content h2 {
+            color: black;
+        }
+        #blogger-content h3 {
+            text-transform: initial;
+        }
     </style>
 </body>
 </html>
