@@ -8,8 +8,14 @@
 $(function() {
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
+        // MODIFIED FOR ANIBAL
+        var sumAllcomponentHeader = parseInt($('nav').css("padding-top"));
+        sumAllcomponentHeader += parseInt($('nav').css("padding-bottom"));
+        sumAllcomponentHeader += parseInt($('nav').css("margin-top"));
+        sumAllcomponentHeader += parseInt($('nav').css("margin-bottom"));
+        
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+            scrollTop: $($anchor.attr('href')).offset().top - sumAllcomponentHeader
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
