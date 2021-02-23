@@ -83,6 +83,7 @@ header {
     text-align: center;
     color: #fff;
     background: #18bc9c;
+    min-height: 100vh;
 }
 
 header .container {
@@ -178,7 +179,7 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 100px 0;
+    padding: 3em 0;
 }
 
 section h2 {
