@@ -87,7 +87,7 @@ header {
 }
 
 header .container {
-    padding-top: 100px;
+    padding-top: 30vh;
     padding-bottom: 50px;
 }
 
@@ -109,12 +109,14 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
-@media(min-width:768px) {
-    header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
-    }
+header #head-svg-man{
+	width: 200px;
+	margin: 0 auto;
+	padding: 2em;
+	margin-bottom: 2em;
+}
 
+@media(min-width:768px) {
     header .intro-text .name {
         font-size: 4.75em;
     }
@@ -454,4 +456,24 @@ h1.h1-header {
     font-size: 22px;
     margin: 0;
     padding: 0;
+}
+
+
+/* MEDIA QUERYS */
+@media(max-width:420px) {
+    header .container {
+        padding-top: 15vh;
+        padding-bottom: 0;
+    }
+	header #head-svg-man{
+		margin-bottom: 0;
+	}
+    .list-inline>li{
+    	padding-left:0;
+    }
+	.btn-social {
+	    width: 70px;
+	    height: 70px;
+	    line-height: 70px;
+	}
 }
