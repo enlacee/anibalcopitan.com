@@ -110,7 +110,7 @@ header .intro-text .skills {
 }
 
 header #head-svg-man{
-	width: 200px;
+	/*width: 200px;*/
 	margin: 0 auto;
 	padding: 2em;
 	margin-bottom: 2em;
@@ -262,8 +262,7 @@ section.success {
 }
 
 .btn-outline {
-    margin-top: 15px;
-    border: solid 2px #fff;
+    border: solid 1px #fff;
     font-size: 20px;
     color: #fff;
     background: 0 0;
@@ -274,7 +273,7 @@ section.success {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #fff;
+    border: solid 1px #fff;
     color: #18bc9c;
     background: #fff;
 }
@@ -453,7 +452,7 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 h1.h1-header {
-    font-size: 22px;
+    font-size: 14px;
     margin: 0;
     padding: 0;
 }
