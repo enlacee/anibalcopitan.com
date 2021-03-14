@@ -56,7 +56,7 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll" id="menu-habilidades">
                         <a href="#habilidades">Habilidades</a>
                     </li>
                     <li>
@@ -84,9 +84,9 @@
                     <div id="head-svg-man">
                         <h2>Computer Engineer- Creator - Inventor</h2>
                     </div>
-                    <div class="intro-text">
+                    <div class="intro-text" id="list-conctact">
                         <!--<h1 class="name">Anibal Copitan - Freelancer</h1>-->
-                        <ul class="list-inline">
+                        <ul class="list-inline" id="list-inline">
                             <li>
                                 <a target="_blank" href="https://blog.anibalcopitan.com" class="btn-social btn-outline">
                                     <i class="fab fa-blogger-b"></i>
@@ -125,7 +125,7 @@
     </header>
 
     <!-- Skill Grid Section -->
-    <section>
+    <section id="last-posts">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -195,7 +195,7 @@
 
     <!-- Portfolio Grid Section -->
     <!-- Footer -->
-    <footer class="text-center">
+    <footer class="text-center" id="footer">
 
         <div class="footer-below">
             <div class="container">
@@ -214,6 +214,31 @@
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
+
+    <script>
+	// Access by: ?action=qr
+        var urlParams = new URLSearchParams(window.location.search);
+        var action = urlParams.get('action');
+        if ( action === 'qr') {
+            var elementsID = ['menu-habilidades', 'head-svg-man', 'list-inline', 'last-posts', 'habilidades', 'footer']
+            elementsID.forEach( function(element, index) {
+                document.getElementById(element).style.display = "none";
+            });
+            
+            var listContact = document.getElementById('list-conctact');
+            var strButtonCall = '';
+            strButtonCall += '<ul class="list-inline" id="list-inline"><li>';
+            strButtonCall += '<a href="tel:+0051978412711" target="_blank" href="" class="btn-social btn-outline"><i class="fas fa-phone"></i></a>';
+            strButtonCall += '</li></ul>';
+
+            listContact.removeChild(document.getElementById('list-inline'));
+            listContact.innerHTML = strButtonCall;
+            listContact.style.display='block';
+
+            //set css
+            document.querySelector('header div.container').style.paddingTop='50vh'
+        }
+    </script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
