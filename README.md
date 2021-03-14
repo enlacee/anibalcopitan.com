@@ -8,5 +8,10 @@ Seo application
 
 ### thumb website
 
-![anibal copitan](https://github.com/enlacee/enlacee.github.io/blob/master/img/thumb.png)
+![anibal copitan](README/thumb.png)
+
+By code QR `?action=qr`
+
+![anibal copitan QR](README/scrennshot-mobilele-by-qr.png)
+
 
