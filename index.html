@@ -94,7 +94,7 @@
                             </li>
                             
                             <li>
-                                <a target="_blank" href="https://api.whatsapp.com/send?phone=51978412711&text=Hola%20me%20gustaria%20saber%20mas%20vi%20tu%20pagina%20http%3A%2F%2Fanibalcopitan.com" 
+                                <a target="_blank" href="https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D51978412711%26text%3DHola%20te%20contacto%20desde%20http%3A%2F%2Fanibalcopitan.com" 
                                 class="btn-social btn-outline"><i class="fab fa-whatsapp"></i></a>
                             </li>
                             <li>
@@ -220,9 +220,10 @@
             
             var listContact = document.getElementById('list-conctact');
             var strButtonCall = '';
-            strButtonCall += '<ul class="list-inline" id="list-inline"><li>';
-            strButtonCall += '<a href="tel:+0051978412711" target="_blank" href="" class="btn-social btn-outline"><i class="fas fa-phone"></i></a>';
-            strButtonCall += '</li></ul>';
+            strButtonCall += '<ul class="list-inline" id="list-inline">';
+            strButtonCall += '<li><a href="tel:+0051978412711" target="_blank" href="" class="btn-social btn-outline"><i class="fas fa-phone"></i></a></li>';
+            strButtonCall += '<li><a target="_blank" href="https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D51978412711%26text%3DHola%20te%20contacto%20desde%20http%3A%2F%2Fanibalcopitan.com" class="btn-social btn-outline"><i class="fab fa-whatsapp"></i></a></li>';
+            strButtonCall += '</ul>';
 
             listContact.removeChild(document.getElementById('list-inline'));
             listContact.innerHTML = strButtonCall;
