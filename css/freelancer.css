@@ -128,7 +128,7 @@ header #head-svg-man{
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 15px 0;
+        /* padding: 15px 0; */
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -154,6 +154,10 @@ header #head-svg-man{
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 0;
 }
 
 .navbar a:focus {

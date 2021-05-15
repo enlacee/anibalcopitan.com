@@ -65,10 +65,12 @@
                             Blog
                         </a>
                     </li>
-                    <!--
-                     <li class="page-scroll">
-                        <a href="#about">Yo Copitan</a>
-                    </li> -->
+                    <li class="page-scroll achide hide">
+                        <a href="#yape">Yape</a>
+                    </li>
+                    <li class="page-scroll achide hide">
+                        <a href="#bank">Bank Accounts</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -136,6 +138,56 @@
                 </div>
             </div>
             <div class="row" id="blogger-content">
+            </div>
+        </div>
+    </section>
+
+    <section id="yape" class="achide hide">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Yape</h2><br/>
+                    <br/>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <img src="img/yape-qr-formato.png" alt="yape QR">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="bank" class="achide hide">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Bank Accounts</h2><br/><br/>
+                </div>
+                <div class="col-lg-12">
+                    <ul>
+                        <li>
+                            <h4>BCP - Banco de credito del Perú</h4>
+                            <p>Soles</p>
+<pre>
+19121738752033
+Interbancario: 00219112173875203350</pre>
+                            <p>Dolares</p>
+<pre>
+19103065842109
+Interbancario: 00219110306584210950</pre>
+                        </li>
+                        <li>
+                            <h4>Interbank</h4>
+                            <p>Soles</p>
+                            <pre>6393098282175</pre>
+                        </li>
+                        <li>
+                            <h4>BanBif</h4>
+                            <p>Soles</p>
+<pre>
+008016038034
+Interbancario: 03820510801603803412</pre>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -232,6 +284,42 @@
             //set css
             document.querySelector('header div.container').style.paddingTop='50vh'
         }
+
+        // Acces by hash #
+        var idHASH = document.location.toString().split('#')[1];
+        if (typeof(idHASH) == 'string') {
+            var theElement = document.querySelector('#' + idHASH);
+            if ( theElement != null) {
+                theElement.classList.remove('hide');
+
+                // navigate to section ONLY JS event
+                // document.querySelector('nav').remove();
+                // document.querySelector('.page-scroll a[href="#' + idHASH + '"]').click();
+
+                // **** set pposition
+                // var sizeNav = document.querySelector('nav').offsetHeight;
+                // var positionElement = theElement.offsetHeight;
+                // window.scrollTo(0, (theElement.offsetHeight + (sizeNav*2)))
+
+                // tricks for watch the section good (#link goto position by default)
+                theElement.insertAdjacentHTML("afterbegin", "<br/><br/>");
+            }
+        }
+
+
+        console.log('TRICKS: Ctrl+enter -> more watch more info');
+        function KeyPressSeeMore(e) {
+            var evtobj = window.event? event : e
+            if (evtobj.keyCode == 13 && evtobj.ctrlKey) {
+                // alert("Ctrl+enter");
+                var elementHides = document.querySelectorAll('.achide');
+                elementHides.forEach(function(elementHide) {
+                    elementHide.classList.remove('hide'); 
+                });
+            }
+        }
+
+        document.onkeydown = KeyPressSeeMore;
     </script>
 
     <!-- jQuery -->

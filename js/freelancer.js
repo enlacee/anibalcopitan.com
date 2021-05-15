@@ -7,17 +7,17 @@
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('.page-scroll a').bind('click', function(event) {
-        var $anchor = $(this);
+        event.preventDefault();
+
+        var $linkCliked = $(this);
         // MODIFIED FOR ANIBAL
         var sumAllcomponentHeader = parseInt($('nav').css("padding-top"));
         sumAllcomponentHeader += parseInt($('nav').css("padding-bottom"));
-        sumAllcomponentHeader += parseInt($('nav').css("margin-top"));
-        sumAllcomponentHeader += parseInt($('nav').css("margin-bottom"));
+        var sizeTotal =  $('nav').height() + sumAllcomponentHeader; // 60 nav
         
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - sumAllcomponentHeader
+            scrollTop: $($linkCliked.attr('href')).offset().top - sizeTotal
         }, 1500, 'easeInOutExpo');
-        event.preventDefault();
     });
 });
 
