@@ -261,7 +261,7 @@ Interbancario: 03820510801603803412</pre>
     </footer>
 
     <script>
-	// Access by: ?action=qr
+	    // Access by: ?action=qr
         var urlParams = new URLSearchParams(window.location.search);
         var action = urlParams.get('action');
         if ( action === 'qr') {
@@ -285,41 +285,22 @@ Interbancario: 03820510801603803412</pre>
             document.querySelector('header div.container').style.paddingTop='50vh'
         }
 
-        // Acces by hash #
-        var idHASH = document.location.toString().split('#')[1];
-        if (typeof(idHASH) == 'string') {
-            var theElement = document.querySelector('#' + idHASH);
-            if ( theElement != null) {
-                theElement.classList.remove('hide');
-
-                // navigate to section ONLY JS event
-                // document.querySelector('nav').remove();
-                // document.querySelector('.page-scroll a[href="#' + idHASH + '"]').click();
-
-                // **** set pposition
-                // var sizeNav = document.querySelector('nav').offsetHeight;
-                // var positionElement = theElement.offsetHeight;
-                // window.scrollTo(0, (theElement.offsetHeight + (sizeNav*2)))
-
-                // tricks for watch the section good (#link goto position by default)
-                theElement.insertAdjacentHTML("afterbegin", "<br/><br/>");
-            }
-        }
-
-
-        console.log('TRICKS: Ctrl+enter -> more watch more info');
+        // activate all pages
         function KeyPressSeeMore(e) {
             var evtobj = window.event? event : e
-            if (evtobj.keyCode == 13 && evtobj.ctrlKey) {
-                // alert("Ctrl+enter");
+            if (evtobj.keyCode == 13 && evtobj.ctrlKey) { // alert("Ctrl+enter");
                 var elementHides = document.querySelectorAll('.achide');
                 elementHides.forEach(function(elementHide) {
                     elementHide.classList.remove('hide'); 
                 });
             }
         }
-
         document.onkeydown = KeyPressSeeMore;
+
+        console.log('TRICKS: Ctrl+enter -> more watch more info');
+        console.log('TRICKS: /?action=qr');
+        console.log('TRICKS: /#yape');
+        console.log('TRICKS: /#bank');
     </script>
 
     <!-- jQuery -->
