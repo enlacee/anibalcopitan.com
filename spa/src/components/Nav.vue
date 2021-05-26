@@ -21,18 +21,18 @@
                   <li class="hidden">
                       <a href="#page-top"></a>
                   </li>
-                  <li class="page-scroll" id="menu-habilidades">
+                  <li>
                       <a href="#habilidades">Skills</a>
                   </li>
                   <li>
-                      <a href="https://blog.anibalcopitan.com" target="_blank">
+                      <a href="#blog">
                           <i class="fas fa-code"></i>Blog
                       </a>
                   </li>
-                  <li class="page-scroll achide hide_">
+                  <li class="achide hide_">
                       <a href="#yape">Yape</a>
                   </li>
-                  <li class="page-scroll achide hide_">
+                  <li class="achide hide_">
                       <a href="#bank">Bank Accounts</a>
                   </li>
               </ul>

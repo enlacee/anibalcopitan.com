@@ -10,6 +10,11 @@
   </div>
 </template>
 <script>
+// css
+import "./assets/css/bootstrap.min.css";
+import "./assets/css/freelancer.css";
+import "./assets/fontawesome-free-5.15.1/css/all.min.css";
+
 import Nav from './components/Nav';
 import SectionHome from './components/SectionHome';
 import SectionBlog from './components/SectionBlog';
