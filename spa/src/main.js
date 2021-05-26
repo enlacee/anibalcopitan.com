@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-// import get from './components/library/CallbackBlogger.js'
 
 Vue.config.productionTip = false
 
-var theVue = new Vue({
+new Vue({
   render: h => h(App),
   methods: {
     get: function (){ return 'get'; }
@@ -12,5 +11,5 @@ var theVue = new Vue({
 }).$mount('#app');
 
 // console.log(process.env);
-console.log('theVue.get', theVue.get);
+// console.log('theVue.get', theVue.get);
 

@@ -63,7 +63,7 @@ export default {
 </script>
 <style scoped>
     #habilidades{
-        background-color: #ccc;
+        background-color: #eee;
     }
     .item {
         display: inline-block;
@@ -74,7 +74,7 @@ export default {
     }
     .item div img {
         /*height: 70px;*/
-        filter: grayscale(100%);
+        /* filter: grayscale(100%); */
     }
     div .textoverlay{
         color: #FFF;
