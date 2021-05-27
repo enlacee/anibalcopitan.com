@@ -22,18 +22,16 @@
                       <a href="#page-top"></a>
                   </li>
                   <li>
-                      <a href="#habilidades">Skills</a>
+                      <a href="#" @click="goTodetail('blog', $event)"><i class="fas fa-code"></i>Blog</a>
                   </li>
                   <li>
-                      <a href="#blog">
-                          <i class="fas fa-code"></i>Blog
-                      </a>
+                      <a href="#" @click="goTodetail('skills', $event)">Skills</a> 
                   </li>
                   <li class="achide hide_">
-                      <a href="#yape">Yape</a>
+                      <a href="#" @click="goTodetail('yape', $event)">Yape</a>
                   </li>
                   <li class="achide hide_">
-                      <a href="#bank">Bank Accounts</a>
+                      <a href="#" @click="goTodetail('bank', $event)">Bank Accounts</a>
                   </li>
               </ul>
           </div>
@@ -45,6 +43,16 @@
 <script>
 export default {
   name: 'Nav',
+  methods: {
+    goTodetail(strURLRouteName, event) {
+        if (event) {
+            event.preventDefault();
+        }
+
+        this.$router.push({name: strURLRouteName});
+        this.$emit('sectionNameIs', strURLRouteName);
+    }
+  }
 //   props: {
 //     msg: String
 //   }

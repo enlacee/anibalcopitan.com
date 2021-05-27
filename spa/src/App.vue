@@ -1,11 +1,11 @@
 <template>
-  <div id="App"> pepito: {{ greeting }}
-    <Nav></Nav>
+  <div id="App">
+    <Nav @sectionNameIs="seccionNameID = $event"></Nav> 
     <SectionHome v-bind:socialMedia="socialMedia"/>
-    <SectionBlog/>
-    <SectionSkill/>
-    <SectionYape/>
-    <SectionBank/>
+    <SectionBlog ref="blog"/>
+    <SectionSkill ref="skills"/>
+    <SectionYape ref="yape"/>
+    <SectionBank ref="bank"/>
     <Footer/>
   </div>
 </template>
@@ -36,13 +36,18 @@ export default {
   },
   data: function(){
     return {
+      seccionNameID: '',
       socialMedia: [],
-      greeting: 'Linux Fan - Software Engineer - Maker / Tester'
     }
   },
   methods: {
-    hola: function(){
-      return 'hola';
+    goToScroll: function(){
+      console.log('route', this.$route);
+      if (this.$route.name) {
+        var element = this.$refs[this.$route.name].$el;     
+        var top = element.offsetTop;
+        window.scrollTo(0, top-60);
+      }
     }
   },
   created: function(){
@@ -53,7 +58,17 @@ export default {
       {id: 4, name: "email", url: "mailto:acopitan@gmail.com"},
       {id: 5, name: "github", url: "https://github.com/enlacee?tab=repositories"},
       {id: 6, name: "linkedin", url: "https://www.linkedin.com/in/9703b1149/"}
-    ]
+    ];
+  },
+  mounted: function(){
+    this.$nextTick(function () {
+        window.addEventListener("load", this.goToScroll);
+    });
+  },
+  watch: {
+    seccionNameID: function() {
+      this.goToScroll();
+    }
   }
 }
 </script>

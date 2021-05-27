@@ -457,6 +457,10 @@ h1.h1-header {
     padding: 0;
 }
 
+section{
+    border: 1px solid red;
+}
+
 
 /* MEDIA QUERYS */
 @media(max-width:420px) {
