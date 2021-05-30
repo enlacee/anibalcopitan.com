@@ -4,7 +4,8 @@
       <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header page-scroll">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                @click="openMenuMobile()">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
@@ -51,6 +52,9 @@ export default {
 
         this.$router.push({name: strURLRouteName});
         this.$emit('sectionNameIs', strURLRouteName);
+    },
+    openMenuMobile() {
+        document.getElementById('bs-example-navbar-collapse-1').classList.toggle('collapse');
     }
   }
 //   props: {

@@ -12,6 +12,10 @@ const routes = [
     // component: SectionBlog
   },
   {
+    path: '/qr',
+    name: 'qr',
+  },
+  {
     path: '/skills',
     name: 'skills',
   },

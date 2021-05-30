@@ -2,6 +2,7 @@
   <div id="App">
     <Nav @sectionNameIs="seccionNameID = $event"></Nav> 
     <SectionHome v-bind:socialMedia="socialMedia"/>
+    <SectionQR ref="qr" title="Linux Fan - Software Engineer - Maker / Tester"/>
     <SectionBlog ref="blog"/>
     <SectionSkill ref="skills"/>
     <SectionYape ref="yape"/>
@@ -17,6 +18,7 @@ import "./assets/fontawesome-free-5.15.1/css/all.min.css";
 
 import Nav from './components/Nav';
 import SectionHome from './components/SectionHome';
+import SectionQR from './components/SectionQR';
 import SectionBlog from './components/SectionBlog';
 import SectionSkill from './components/SectionSkill';
 import SectionYape from './components/SectionYape';
@@ -28,6 +30,7 @@ export default {
   components: {
     Nav,
     SectionHome,
+    SectionQR,
     SectionBlog,
     SectionSkill,
     SectionYape,

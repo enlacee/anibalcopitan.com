@@ -7,7 +7,7 @@
                     <hr class="star-primary">
                 </div>
                 <div class="col-lg-12 text-center">
-                    <img src="img/yape-qr-formato.png" alt="yape QR">
+                    <img src="img/yape-qr-formato.png" alt="yape QR" class="img-responsive">
                 </div>
             </div>
         </div>
