@@ -28,10 +28,10 @@
                   <li>
                       <a href="#" @click="goTodetail('skills', $event)">Skills</a> 
                   </li>
-                  <li class="achide hide_">
+                  <li class="achide" :class="{hide: hideYape}">
                       <a href="#" @click="goTodetail('yape', $event)">Yape</a>
                   </li>
-                  <li class="achide hide_">
+                  <li class="achide" :class="{hide: hideBank}">
                       <a href="#" @click="goTodetail('bank', $event)">Bank Accounts</a>
                   </li>
               </ul>
@@ -44,21 +44,38 @@
 <script>
 export default {
   name: 'Nav',
+  data: function(){
+    return {
+        hide: true,
+        hideYape: true,
+        hideBank: true
+    }
+  },
   methods: {
     goTodetail(strURLRouteName, event) {
         if (event) {
             event.preventDefault();
         }
+        // console.log('this.$router', this.$router);
+        // console.log('this.$route', this.$route.name);
+        // console.log('strURLRouteName', strURLRouteName);
 
-        this.$router.push({name: strURLRouteName});
+        if (this.$route.name !== strURLRouteName) {
+            this.$router.push({name: strURLRouteName}); // error to overwrite same value 'name'
+        }
         this.$emit('sectionNameIs', strURLRouteName);
     },
     openMenuMobile() {
         document.getElementById('bs-example-navbar-collapse-1').classList.toggle('collapse');
     }
+  },
+  mounted: function(){
+    //read route
+    if (this.$route.name === 'yape') {
+      this.hideYape = false;
+    } else if (this.$route.name === 'bank') {
+      this.hideBank = false;
+    }
   }
-//   props: {
-//     msg: String
-//   }
 }
 </script>

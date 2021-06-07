@@ -45,7 +45,7 @@ export default {
   },
   methods: {
     goToScroll: function(){
-      console.log('route', this.$route);
+      console.log('route', this.$route, 'seccionNameID', this.seccionNameID);
       if (this.$route.name) {
         var element = this.$refs[this.$route.name].$el;     
         var top = element.offsetTop;

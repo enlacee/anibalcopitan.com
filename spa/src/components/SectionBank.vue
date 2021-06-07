@@ -1,5 +1,5 @@
 <template>
-    <section id="bank" class="achide hide_">
+    <section id="bank" class="achide" :class="{hide: hide}">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -38,7 +38,18 @@
 </template>
 <script>
 export default {
-    name: 'SectionBank'
+    name: 'SectionBank',
+    data: function() {
+        return {
+            hide: true
+        }
+    },
+	mounted: function(){
+		//read route
+		if (this.$route.name === 'bank') {
+			this.hide = false;
+		}
+	}
 }
 </script>
 <style scoped>
