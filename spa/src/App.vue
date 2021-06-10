@@ -3,10 +3,10 @@
     <Nav @sectionNameIs="seccionNameID = $event"></Nav> 
     <SectionHome v-bind:socialMedia="socialMedia"/>
     <SectionQR ref="qr" title="Linux Fan - Software Engineer - Maker / Tester"/>
-    <SectionBlog ref="blog"/>
-    <SectionSkill ref="skills"/>
     <SectionYape ref="yape"/>
     <SectionBank ref="bank"/>
+    <SectionBlog ref="blog"/>
+    <SectionSkill ref="skills"/>
     <Footer/>
   </div>
 </template>

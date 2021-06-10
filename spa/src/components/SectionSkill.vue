@@ -11,6 +11,15 @@
                 <div id="owl-demo" class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="img-responsive">
+                            <img src="img/skills/linux.png" title="LINUX" alt="LINUX">
+                            <div class="textoverlay">
+                                <h2>LINUX</h2>
+                                <p>El todo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-responsive">
                             <img src="img/skills/python.png" title="Python" alt="Python">
                             <div class="textoverlay">
                                 <h2>Python</h2>
@@ -33,15 +42,6 @@
                             <div class="textoverlay">
                                 <h2>PHP</h2>
                                 <p>Zend-Framework, Laravel</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="img-responsive">
-                            <img src="img/skills/linux.png" title="LINUX" alt="LINUX">
-                            <div class="textoverlay">
-                                <h2>LINUX</h2>
-                                <p>El todo</p>
                             </div>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ export default {
     }
     .item div img {
         /*height: 70px;*/
-        /* filter: grayscale(100%); */
+        filter: grayscale(100%);
     }
     div .textoverlay{
         color: #FFF;

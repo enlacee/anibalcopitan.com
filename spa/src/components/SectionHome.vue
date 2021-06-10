@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header :class="{hide: hide}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -52,11 +52,18 @@ export default {
     },
     data(){
         return {
-            title: "Linux Fan - Software Engineer - Maker / Tester"
+            title: "Linux Fan - Software Engineer - Maker / Tester",
+            hide: false
         }
     },
     created(){
         console.log('socialMedia', this.socialMedia);
-    }
+    },
+	mounted: function(){
+		//read route
+		if (this.$route.name === 'qr') {
+			this.hide = true;
+		}
+	}
 }
 </script>
