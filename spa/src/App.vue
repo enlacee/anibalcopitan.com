@@ -47,7 +47,15 @@ export default {
     goToScroll: function(){
       console.log('route', this.$route, 'seccionNameID', this.seccionNameID);
       if (this.$route.name) {
-        var element = this.$refs[this.$route.name].$el;     
+
+        // SET SEO
+        const WEB_NAME_PREFIX = process.env.VUE_APP_NAME + ' - '
+        let str = this.$route.name;
+        let strTitle = str.charAt(0).toUpperCase() + str.slice(1);
+        document.title = WEB_NAME_PREFIX + strTitle;
+
+        // SET SECTION
+        var element = this.$refs[this.$route.name].$el;
         var top = element.offsetTop;
         window.scrollTo(0, top-60);
       }
