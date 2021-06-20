@@ -29,6 +29,7 @@ export default {
         return {
             title: "Last Articles",
             posts: [],
+            vueAppUrlBlog: process.env.VUE_APP_URL_BLOG
         };
     },
     mounted() {
@@ -38,7 +39,7 @@ export default {
         let script = document.createElement("script");
         script.setAttribute(
             "src",
-            "https://blog.anibalcopitan.com/feeds/posts/default?alt=json-in-script&callback=getPosts"
+            this.vueAppUrlBlog + "/feeds/posts/default?alt=json-in-script&callback=getPosts"
         );
         document.head.appendChild(script);
         // script.onload = () => {

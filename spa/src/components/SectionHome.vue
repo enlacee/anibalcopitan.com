@@ -9,7 +9,7 @@
                     <div class="intro-text" id="list-conctact">
                         <ul class="list-inline" id="list-inline">
                             <li>
-                                <a target="_blank" href="https://blog.anibalcopitan.com" class="btn-social btn-outline">
+                                <a target="_blank" :href="vueAppUrlBlog" class="btn-social btn-outline">
                                     <i class="fab fa-blogger-b"></i>
                                 </a>
                             </li>
@@ -51,9 +51,11 @@ export default {
         socialMedia: Array
     },
     data(){
+
         return {
             title: "Linux Fan - Software Engineer - Maker / Tester",
-            hide: false
+            hide: false,
+            vueAppUrlBlog: process.env.VUE_APP_URL_BLOG 
         }
     },
     created(){
