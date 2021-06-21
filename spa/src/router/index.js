@@ -7,6 +7,10 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/',
+    name: 'home',
+  },
+  {
     path: '/blog',
     name: 'blog',
     // component: SectionBlog

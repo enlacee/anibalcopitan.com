@@ -55,9 +55,11 @@ export default {
         document.title = WEB_NAME_PREFIX + strTitle;
 
         // SET SECTION
-        var element = this.$refs[this.$route.name].$el;
-        var top = element.offsetTop;
-        window.scrollTo(0, top-60);
+        if (this.$refs[this.$route.name]) {
+          var element = this.$refs[this.$route.name].$el;
+          var top = element.offsetTop;
+          window.scrollTo(0, top-60);
+        }
       }
     }
   },
