@@ -1,5 +1,5 @@
 <template>
-    <section id="habilidades">
+    <section id="skills">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -11,7 +11,7 @@
                 <div id="owl-demo" class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="img-responsive">
-                            <img src="img/skills/linux.png" title="LINUX" alt="LINUX">
+                            <img src="img/skills/linux.png" title="LINUX" alt="LINUX" width="400px" height="400px">
                             <div class="textoverlay">
                                 <h2>LINUX</h2>
                                 <p>El todo</p>
@@ -20,7 +20,7 @@
                     </div>
                     <div class="item">
                         <div class="img-responsive">
-                            <img src="img/skills/python.png" title="Python" alt="Python">
+                            <img src="img/skills/python.png" title="Python" alt="Python" width="400px" height="400px">
                             <div class="textoverlay">
                                 <h2>Python</h2>
                                 <p>La navaja suiza</p>
@@ -29,7 +29,7 @@
                     </div>
                     <div class="item">
                         <div class="img-responsive">
-                            <img src="img/skills/javascript.png" title="Javascript" alt="Javascript">
+                            <img src="img/skills/javascript.png" title="Javascript" alt="Javascript" width="400px" height="400px">
                             <div class="textoverlay">
                                 <h2>Javascript</h2>
                                 <p>Multiplataforma</p>
@@ -38,7 +38,7 @@
                     </div>
                     <div class="item">
                         <div class="img-responsive">
-                            <img src="img/skills/php.png" title="PHP" alt="PHP">
+                            <img src="img/skills/php.png" title="PHP" alt="PHP" width="400px" height="400px">
                             <div class="textoverlay">
                                 <h2>PHP</h2>
                                 <p>Zend-Framework, Laravel</p>
@@ -62,7 +62,7 @@ export default {
 }
 </script>
 <style scoped>
-    #habilidades{
+    #skills{
         background-color: #eee;
     }
     .item {
@@ -93,6 +93,7 @@ export default {
         }
         .item div img {
             width: 250px;
+            height: 250px;
         }
         div .textoverlay{
             width: 250px;

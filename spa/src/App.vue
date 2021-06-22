@@ -75,7 +75,7 @@ export default {
   },
   mounted: function(){
     this.$nextTick(function () {
-        window.addEventListener("load", this.goToScroll);
+        window.addEventListener("DOMContentLoaded", this.goToScroll);
     });
   },
   watch: {
