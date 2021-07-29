@@ -54,7 +54,7 @@
 <script>
 export default {
     name: 'SectionSkill',
-    data(){
+    data() {
         return {
             title: "Skills"
         };

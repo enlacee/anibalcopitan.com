@@ -23,7 +23,7 @@
 <script>
 
 export default {
-    // name: 'SectionBlog',
+    name: 'SectionBlog',
     data() {
       return {
         title: "Last Articles",
@@ -31,13 +31,11 @@ export default {
         vueAppUrlBlog: process.env.appUrlBlog
       }
     },
-    mounted: () => {
-
+    mounted() {
+        this.getAllPosts();
     },
     methods: {
-        getAllPosts: () => {
-            
-            // console.log('this.vueAppUrlBlog', this.vueAppUrlBlog);
+        getAllPosts() {
 
             window.getPosts = (data) => {
                 this.posts = data.feed.entry.slice(0,5);

@@ -32,10 +32,12 @@ export default {
             required: true
         },
     },
-    data: () => ({
-        hide: false
-    }),
-    mounted: () => {
+    data() {
+        return {
+            hide: true
+        }
+    },
+    mounted() {
 
         // read route
         // if (this.$route.name === 'qr') {

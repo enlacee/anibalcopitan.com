@@ -19,10 +19,10 @@ export default {
 	data() {
 		return {
 			title: "Yape",
-			hide: false
+			hide: true
 		}
 	},
-	mounted: () => {
+	mounted() {
 
 		// read route
 		// if (this.$route.name === 'yape') {

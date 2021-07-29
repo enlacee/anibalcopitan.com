@@ -39,15 +39,18 @@
 <script>
 export default {
     name: 'SectionBank',
-    data: () => ({
-        hide: false
-    }),
-	mounted: () => {
+    data() {
+        return {
+            hide: true
+        }
+        
+    },
+	mounted() {
 
-		// read route
-		// if (this.$route.name === 'bank') {
-		// 	this.hide = false;
-		// }
+    	// read route
+    	// if (this.$route.name === 'bank') {
+    	// 	this.hide = false;
+    	// }
 	}
 }
 </script>

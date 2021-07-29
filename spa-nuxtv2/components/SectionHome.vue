@@ -7,7 +7,7 @@
                         <h2>{{ title }}</h2>
                     </div>
                     <div id="list-conctact" class="intro-text">
-                        <ul class="list-inline" id="list-inline">
+                        <ul id="list-inline" class="list-inline">
                             <li>
                                 <a target="_blank" :href="vueAppUrlBlog" class="btn-social btn-outline">
                                     <i class="fab fa-blogger-b"></i>
@@ -46,31 +46,29 @@
 </template>
 <script>
 export default {
-
-    // name: 'SectionHome',
+    name: 'SectionHome',
     props: {
         rrss: {
             type: Array,
             required: true
         },
     },
-    data: () => ({
-        title: "Linux Fan - Software Engineer - Maker / Tester",
-        hide: false,
-        vueAppUrlBlog: process.env.VUE_APP_URL_BLOG 
-    }),
-    created: () => {
-
-        // console.log('rrss', this.rrss);
-        // console.log('rrss thiss', this);
+    data() {
+        return {
+            title: "Linux Fan - Software Engineer - Maker / Tester",
+            hide: false,
+            vueAppUrlBlog: process.env.appUrlBlog 
+        }
     },
-	mounted: () => {
+    created() {
+        console.log('socialMedia', this.rrss);
+    },
+	mounted() {
 
-        // console.log('rrss thiss mounted', this);
-		// read route
-		// if (this.$route.name === 'qr') {
-		// 	this.hide = true;
-		// }
+        // read route
+        if (this.$route.name === 'qr') {
+            this.hide = true;
+        }
 	}
 }
 </script>

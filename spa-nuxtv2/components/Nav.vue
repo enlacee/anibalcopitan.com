@@ -17,7 +17,7 @@
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
                   <li class="hidden">
                       <a href="#page-top"></a>
@@ -44,21 +44,37 @@
 <script>
 export default {
   name: 'Nav',
-  data: () => ({
-    hide: true,
-    hideYape: true,
-    hideBank: true
-  }),
+  data() {
+    return {
+      hide: true,
+      hideYape: true,
+      hideBank: true
+    }
+  },
+  mounted() {
+
+    // read route
+    // if (this.$route.name === 'yape') {
+    //   this.hideYape = false;
+    // } else if (this.$route.name === 'bank') {
+    //   this.hideBank = false;
+    // }
+  },
   methods: {
     goTodetail(strURLRouteName, event) {
 
+        // if (event) {
+        //     event.preventDefault();
+        // }
+
+        // if (this.$route.name !== strURLRouteName) {
+        //     this.$router.push({name: strURLRouteName}); // error to overwrite same value 'name'
+        // }
+        // this.$emit('sectionNameIs', strURLRouteName);
     },
     openMenuMobile() {
         document.getElementById('bs-example-navbar-collapse-1').classList.toggle('collapse');
     }
-  },
-  mounted: () => ({
-    
-  })
+  }
 }
 </script>
