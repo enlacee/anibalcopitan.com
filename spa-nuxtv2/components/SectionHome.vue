@@ -14,7 +14,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://wa.link/s7q46e" 
+                                <a target="_blank" href="https://wa.link/s7q46e"
                                 class="btn-social btn-outline"><i class="fab fa-whatsapp"></i></a>
                             </li>
                             <li>
@@ -22,10 +22,10 @@
                                     <i class="fab fa-twitter"></i>
                                 </a>
                             </li>
-							<li>
+							              <li>
                                 <a href="mailto:acopitan@gmail.com" class="btn-social btn-outline"><i class="fas fa-envelope"></i></a>
                             </li>
-							<li>
+							              <li>
                                 <a target="_blank" href="https://github.com/enlacee?tab=repositories" class="btn-social btn-outline"><i class="fab fa-github-alt"></i></a>
                             </li>
                             <li>
@@ -34,7 +34,7 @@
                         </ul>
                         <hr class="star-light">
                         <p class="skills">
-                            <!-- 
+                            <!--
                             <strong>Anibal</strong> Desarrollador web en LINUX y windows con mas de 3 años de experiencia en <strong>desarrollo de aplicaciones</strong> poderosas y eficientes conocimientos en Back-End y Front-End
                              -->
                         </p>
@@ -47,28 +47,20 @@
 <script>
 export default {
     name: 'SectionHome',
-    props: {
-        rrss: {
-            type: Array,
-            required: true
-        },
-    },
+    props: ['rrss'],
     data() {
         return {
             title: "Linux Fan - Software Engineer - Maker / Tester",
             hide: false,
-            vueAppUrlBlog: process.env.appUrlBlog 
+            vueAppUrlBlog: process.env.appUrlBlog
         }
     },
-    created() {
-        console.log('socialMedia', this.rrss);
-    },
-	mounted() {
+    mounted() {
 
         // read route
         if (this.$route.name === 'qr') {
             this.hide = true;
         }
-	}
+    }
 }
 </script>

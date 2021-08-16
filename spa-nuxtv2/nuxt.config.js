@@ -25,6 +25,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/utils.js' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -72,6 +73,5 @@ export default {
     appTitle: process.env.VUE_APP_TITLE || 'Nuxtjs - Home',
     appBaseUrl: process.env.VUE_APP_BASE_URL || 'http://anibalcopitan.com',
     appUrlBlog: process.env.VUE_APP_URL_BLOG || 'https://blog.anibalcopitan.com',
-  }
-
+  },
 }

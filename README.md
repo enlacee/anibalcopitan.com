@@ -15,3 +15,7 @@ By code QR `?action=qr`
 ![anibal copitan QR](README/scrennshot-mobilele-by-qr.png)
 
 
+### spa nuxt project
+
+cd spa-nuxtv2/
+yarn dev

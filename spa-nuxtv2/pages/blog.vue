@@ -5,8 +5,8 @@
     <SectionQR ref="qr" title="Linux Fan - Software Engineer - Maker / Tester"/>
     <SectionYape ref="yape"/>
     <SectionBank ref="bank"/>
-    <SectionBlog ref="blog"/>
     <SectionSkill ref="skills"/>
+    <SectionBlog ref="blog"/>
     <Footer/>
   </div>
 </template>
@@ -20,7 +20,7 @@
     watch: {
       seccionNameID() {
         this.goToScroll();
-      },
+      }
     },
     mounted() {
 
@@ -28,14 +28,14 @@
       // if (Object.keys(this.$refs).length > 0) {
       //   this.goToScroll();
       // };
-      console.log('print in index.vue sectionNameIs = ', this.seccionNameID);
+      console.log('print in blog.vue sectionNameIs = ', this.seccionNameID);
 
       this.$nextTick(function () {
         window.addEventListener("DOMContentLoaded", this.goToScroll);
       });
     },
     methods: {
-      goToScroll() {
+      goToScroll() { console.log('ejecuto! en blog.vue');
         const sectionID = this.$route.name;
         console.log('sectionID', sectionID);
 
@@ -50,3 +50,4 @@
     }
   }
 </script>
+

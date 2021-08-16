@@ -23,17 +23,21 @@
                       <a href="#page-top"></a>
                   </li>
                   <li>
-                      <a href="#" @click="goTodetail('blog', $event)"><i class="fas fa-code"></i>Blog</a>
+                    <!-- <a href="#" @click="scrollTo('#blog', $event)">Blog</a> -->
+                    <NuxtLink to="/blog"  @click.native="scrollTo('#blog', $event)"><i class="fas fa-code"></i>Blog</NuxtLink>
                   </li>
                   <li>
-                      <a href="#" @click="goTodetail('skills', $event)">Skills</a> 
+                    <NuxtLink to="/skills"  @click.native="scrollTo('#skills', $event)">Skills</NuxtLink>
                   </li>
+
+                  <!--
                   <li class="achide" :class="{hide: hideYape}">
-                      <a href="#" @click="goTodetail('yape', $event)">Yape</a>
+                      <a href="#" @click="scrollTo('#yape')">Yape</a>
                   </li>
                   <li class="achide" :class="{hide: hideBank}">
-                      <a href="#" @click="goTodetail('bank', $event)">Bank Accounts</a>
+                      <a href="#" @click="scrollTo('#bank')">Bank Accounts</a>
                   </li>
+                  -->
               </ul>
           </div>
           <!-- /.navbar-collapse -->
@@ -51,26 +55,21 @@ export default {
       hideBank: true
     }
   },
-  mounted() {
-
-    // read route
-    // if (this.$route.name === 'yape') {
-    //   this.hideYape = false;
-    // } else if (this.$route.name === 'bank') {
-    //   this.hideBank = false;
-    // }
-  },
   methods: {
-    goTodetail(strURLRouteName, event) {
+    scrollTo(hashtag, event) {
 
-        // if (event) {
-        //     event.preventDefault();
-        // }
+      if (event) {
+          event.preventDefault();
+      }
 
-        // if (this.$route.name !== strURLRouteName) {
-        //     this.$router.push({name: strURLRouteName}); // error to overwrite same value 'name'
-        // }
-        // this.$emit('sectionNameIs', strURLRouteName);
+      /**
+       * EMIT EVENT receptor is into **index.vue** (main file)
+       *
+       * Change value: to variable *sectionNameIs*
+       * EACH link
+      **/
+      this.$emit('sectionNameIs', hashtag.substring(1));
+      console.log('CLIC IN nav.vue. sectionNameIs = ', hashtag.substring(1));
     },
     openMenuMobile() {
         document.getElementById('bs-example-navbar-collapse-1').classList.toggle('collapse');
