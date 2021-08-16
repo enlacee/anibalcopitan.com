@@ -6,7 +6,7 @@ Web project 2014, all list timeline
 
 Seo application
 
-### thumb website
+## thumb website
 
 ![anibal copitan](README/thumb.png)
 
@@ -15,7 +15,9 @@ By code QR `?action=qr`
 ![anibal copitan QR](README/scrennshot-mobilele-by-qr.png)
 
 
-### spa nuxt project
+## Project Spa web with NuxtJs
 
-cd spa-nuxtv2/
-yarn dev
+Start application:
+
+    cd spa-nuxtv2/
+    yarn dev
