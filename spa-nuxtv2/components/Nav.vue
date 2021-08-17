@@ -4,7 +4,7 @@
       <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header page-scroll">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+              <button type="button" class="navbar-toggle"
                 @click="openMenuMobile()">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
@@ -12,22 +12,22 @@
                   <span class="icon-bar"></span>
               </button>
               <h1 class="h1-header">
-                  <a class="navbar-brand" href="#page-top">Anibal Copitan</a>
+                  <a class="navbar-brand" href="#top" @click.prevent="$utils.goTop(0)">Anibal Copitan</a>
               </h1>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+          <div class="navbar-collapse" :class="{collapse: toggleNav}">
               <ul class="nav navbar-nav navbar-right">
                   <li class="hidden">
                       <a href="#page-top"></a>
                   </li>
                   <li>
                     <!-- <a href="#" @click="scrollTo('#blog', $event)">Blog</a> -->
-                    <NuxtLink to="/blog"  @click.native="scrollTo('#blog', $event)"><i class="fas fa-code"></i>Blog</NuxtLink>
+                    <NuxtLink to="/blog"  @click.native="scrollTo('blog', $event)"><i class="fas fa-code"></i>Blog</NuxtLink>
                   </li>
                   <li>
-                    <NuxtLink to="/skills"  @click.native="scrollTo('#skills', $event)">Skills</NuxtLink>
+                    <NuxtLink to="/skills"  @click.native="scrollTo('skills', $event)">Skills</NuxtLink>
                   </li>
 
                   <!--
@@ -52,27 +52,20 @@ export default {
     return {
       hide: true,
       hideYape: true,
-      hideBank: true
+      hideBank: true,
+      toggleNav: true,
     }
   },
   methods: {
-    scrollTo(hashtag, event) {
-
+    scrollTo(idEl, event) {
       if (event) {
-          event.preventDefault();
+        event.preventDefault();
       }
-
-      /**
-       * EMIT EVENT receptor is into **index.vue** (main file)
-       *
-       * Change value: to variable *sectionNameIs*
-       * EACH link
-      **/
-      this.$emit('sectionNameIs', hashtag.substring(1));
-      console.log('CLIC IN nav.vue. sectionNameIs = ', hashtag.substring(1));
+      this.$utils.goToSection(idEl);
     },
     openMenuMobile() {
-        document.getElementById('bs-example-navbar-collapse-1').classList.toggle('collapse');
+      this.toggleNav = !this.toggleNav;
+      // document.getElementById('bs-example-navbar-collapse-1').classList.toggle('collapse');
     }
   }
 }
