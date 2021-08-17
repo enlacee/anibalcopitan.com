@@ -13,41 +13,21 @@
 <script>
   export default {
     data() {
-      return {
-        seccionNameID: '',
-      }
-    },
-    watch: {
-      seccionNameID() {
-        this.goToScroll();
-      }
+      return {}
     },
     mounted() {
-
-      // artilugio para scrollto pagina interna desde HOME
-      // if (Object.keys(this.$refs).length > 0) {
-      //   this.goToScroll();
-      // };
-      console.log('print in blog.vue sectionNameIs = ', this.seccionNameID);
-
-      this.$nextTick(function () {
-        window.addEventListener("DOMContentLoaded", this.goToScroll);
-      });
+      setTimeout(() => {
+        this.goToScroll();
+      }, 500);
     },
     methods: {
-      goToScroll() { console.log('ejecuto! en blog.vue');
-        const sectionID = this.$route.name;
-        console.log('sectionID', sectionID);
-
-        if (sectionID && sectionID !== 'index') {
-          const element = this.$refs[sectionID].$el;
-          this.$utils.goToScroll(sectionID, element);
-
-          // empty variable
-          this.seccionNameID = '';
+      goToScroll() {
+        const { name } = this.$route;
+        if (name && name !== 'index') {
+          this.$utils.goToSection(name);
         }
-      }
-    }
+      },
+    },
   }
 </script>
 

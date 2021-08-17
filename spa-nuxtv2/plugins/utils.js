@@ -1,5 +1,19 @@
 const utils = {
   name: 'Utils',
+  goTop(top) {
+    window.scroll({
+      top,
+      left: 0,
+      behavior: 'smooth',
+    });
+  },
+  goToSection(idEl) {
+    const el = document.querySelector(`#${idEl}`)
+    if (el) {
+      const top = (el.getBoundingClientRect().top + window.scrollY) - 60
+      this.goTop(top);
+    }
+  },
   goToScroll(sectionID, TheElement) {
     console.log('seccionNameID', sectionID);
     console.log('TheElement', TheElement);
