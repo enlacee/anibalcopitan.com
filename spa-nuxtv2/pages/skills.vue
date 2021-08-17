@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nav @sectionNameIs="seccionNameID = $event"></Nav>
+    <Nav></Nav>
     <SectionHome></SectionHome>
     <SectionQR ref="qr" title="Linux Fan - Software Engineer - Maker / Tester"/>
     <SectionYape ref="yape"/>

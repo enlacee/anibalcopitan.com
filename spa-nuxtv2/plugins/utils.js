@@ -36,24 +36,6 @@ const utils = {
       }
     }
   },
-  // gotToScrollv1(IDSECCTION, $refs) {
-
-  //   // SET SEO
-  //   const WEB_NAME_PREFIX = process.env.appName + ' - ';
-  //   console.log('WEB_NAME_PREFIX', WEB_NAME_PREFIX)
-  //   const str = IDSECCTION;
-  //   const strTitle = str.charAt(0).toUpperCase() + str.slice(1);
-  //   document.title = WEB_NAME_PREFIX + strTitle;
-  //   console.log('IDSECCTION', IDSECCTION);
-  //   console.log('this.$refs', $refs);
-
-  //   // SET SECTION
-  //   if ($refs[IDSECCTION]) {
-  //     const element = $refs[IDSECCTION].$el;
-  //     const top = element.offsetTop;
-  //     window.scrollTo(0, top-60);
-  //   }
-  // }
 }
 
 export default ({ app, route }, inject) => {

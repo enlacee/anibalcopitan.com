@@ -23,11 +23,10 @@
                       <a href="#page-top"></a>
                   </li>
                   <li>
-                    <!-- <a href="#" @click="scrollTo('#blog', $event)">Blog</a> -->
-                    <NuxtLink to="/blog"  @click.native="scrollTo('blog', $event)"><i class="fas fa-code"></i>Blog</NuxtLink>
+                    <NuxtLink to="/blog"><i class="fas fa-code"></i>Blog</NuxtLink>
                   </li>
                   <li>
-                    <NuxtLink to="/skills"  @click.native="scrollTo('skills', $event)">Skills</NuxtLink>
+                    <NuxtLink to="/skills">Skills</NuxtLink>
                   </li>
 
                   <!--
@@ -57,15 +56,8 @@ export default {
     }
   },
   methods: {
-    scrollTo(idEl, event) {
-      if (event) {
-        event.preventDefault();
-      }
-      this.$utils.goToSection(idEl);
-    },
     openMenuMobile() {
       this.toggleNav = !this.toggleNav;
-      // document.getElementById('bs-example-navbar-collapse-1').classList.toggle('collapse');
     }
   }
 }
