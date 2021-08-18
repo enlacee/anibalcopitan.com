@@ -47,7 +47,7 @@
 <script>
 export default {
     name: 'SectionHome',
-    props: ['rrss'],
+    props: [],
     data() {
         return {
             title: "Linux Fan - Software Engineer - Maker / Tester",
