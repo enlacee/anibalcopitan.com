@@ -9,7 +9,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Anibal Copitan Linux Fan and Software Engineer in the ecosystems web/movil with experience as Back-End developer and scrum methodology' },
-      { name: 'format-detection', content: 'telephone=no' }
+
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

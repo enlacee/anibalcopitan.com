@@ -13,7 +13,7 @@
                                 <i class="fas fa-phone"></i></a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://wa.link/s7q46e" 
+                                <a target="_blank" href="https://wa.link/s7q46e"
                                 class="btn-social btn-outline"><i class="fab fa-whatsapp"></i></a>
                             </li>
                         </ul>
@@ -38,11 +38,13 @@ export default {
         }
     },
     mounted() {
+    const idSection = 'qr';
+    const { name, hash } = this.$route;
 
-        // read route
-        // if (this.$route.name === 'qr') {
-        // 	this.hide = false;
-        // }
+    // read route
+    if (name === idSection || hash.substring(1) === idSection) {
+      this.hide = false;
+    }
 	}
 }
 </script>

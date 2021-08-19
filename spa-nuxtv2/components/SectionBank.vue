@@ -43,14 +43,16 @@ export default {
         return {
             hide: true
         }
-        
+
     },
 	mounted() {
+    const idSection = 'bank';
+    const { name, hash } = this.$route;
 
-    	// read route
-    	// if (this.$route.name === 'bank') {
-    	// 	this.hide = false;
-    	// }
+    // read route
+    if (name === idSection || hash.substring(1) === idSection) {
+      this.hide = false;
+    }
 	}
 }
 </script>

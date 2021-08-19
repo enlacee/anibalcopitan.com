@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nav></Nav>
+    <NavHome></NavHome>
     <SectionHome></SectionHome>
     <SectionQR ref="qr" title="Linux Fan - Software Engineer - Maker / Tester"/>
     <SectionYape ref="yape"/>
@@ -17,9 +17,17 @@
     },
     mounted() {
 
-      // this.$nextTick(function () {
-      //   window.addEventListener("DOMContentLoaded", this.goToScroll);
-      // });
+      setTimeout(() => {
+        this.goToScroll();
+      }, 500);
     },
+    methods: {
+      goToScroll() {
+        const { hash } = this.$route;
+        if ( hash ) {
+          this.$utils.goToSection(hash.substring(1));
+        }
+      },
+    }
   }
 </script>

@@ -23,7 +23,7 @@
                       <a href="#page-top"></a>
                   </li>
                   <li>
-                    <NuxtLink to="/blog"><i class="fas fa-code"></i>Blog</NuxtLink>
+                    <a href="#blog" @click="scrollTo('blog', $event)"><i class="fas fa-code"></i>Blog</a>
                   </li>
                   <li>
                     <a href="#skills" @click="scrollTo('skills', $event)">Skills</a>
@@ -37,7 +37,6 @@
 </template>
 <script>
 export default {
-  name: 'Nav',
   data() {
     return {
       toggleNav: true,
@@ -46,6 +45,16 @@ export default {
   methods: {
     openMenuMobile() {
       this.toggleNav = !this.toggleNav;
+    },
+    scrollTo(idEl, event) {
+
+      if (event) {
+        event.preventDefault();
+      }
+
+      // window.location.href = "" + idEl;
+      window.location.href = "#" + idEl; // remove this Rewrite URL for Remove anchor default position
+      this.$utils.goToSection(idEl);
     }
   }
 }

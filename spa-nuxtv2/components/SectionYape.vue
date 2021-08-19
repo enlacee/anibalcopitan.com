@@ -23,11 +23,13 @@ export default {
 		}
 	},
 	mounted() {
+    const idSection = 'yape';
+    const { name, hash } = this.$route;
 
-		// read route
-		// if (this.$route.name === 'yape') {
-		// 	this.hide = false;
-		// }
+    // read route
+    if (name === idSection || hash.substring(1) === idSection) {
+      this.hide = false;
+    }
 	}
 }
 </script>

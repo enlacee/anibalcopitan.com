@@ -56,11 +56,13 @@ export default {
         }
     },
     mounted() {
+      const idSection = 'qr';
+      const { name, hash } = this.$route;
 
-        // read route
-        if (this.$route.name === 'qr') {
-            this.hide = true;
-        }
+      // read route
+      if (name === idSection || hash.substring(1) === idSection) {
+        this.hide = true;
+      }
     }
 }
 </script>
