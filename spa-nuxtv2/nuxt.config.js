@@ -12,7 +12,8 @@ export default {
 
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.15.4/css/all.css',integrity: 'sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm', crossorigin: 'anonymous' }
     ]
   },
 
@@ -20,7 +21,6 @@ export default {
   css: [
     '@/assets/css/bootstrap.min.css',
     '@/assets/css/freelancer.css',
-    '@/assets/fontawesome-free-5.15.1/css/all.min.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
