@@ -10,7 +10,7 @@ Seo application
 
 ![anibal copitan](README/thumb.png)
 
-By code QR `?action=qr`
+By code QR `/#qr`
 
 ![anibal copitan QR](README/scrennshot-mobilele-by-qr.png)
 

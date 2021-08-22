@@ -26,7 +26,7 @@
                     <NuxtLink to="/blog"><i class="fas fa-code"></i>Blog</NuxtLink>
                   </li>
                   <li>
-                    <a href="#skills" @click="scrollTo('skills', $event)">Skills</a>
+                    <a href="/#skills">Skills</a>
                   </li>
               </ul>
           </div>
