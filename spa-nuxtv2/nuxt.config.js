@@ -4,11 +4,11 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Anibal Copitan - Linux Fan and Software Engineer',
+    title: process.env.VUE_APP_TITLE,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Anibal Copitan Linux Fan and Software Engineer in the ecosystems web/movil with experience as Back-End developer and scrum methodology' },
+      { hid: 'description', name: 'description', content: process.env.VUE_APP_DESCRIPTION },
 
     ],
     link: [
@@ -72,7 +72,7 @@ export default {
     // baseUrl: process.env.BASE_URL || 'http://localhost:3000',
     appName: process.env.VUE_APP_NAME || 'Nuxtjs',
     appTitle: process.env.VUE_APP_TITLE || 'Nuxtjs - Home',
-    appBaseUrl: process.env.VUE_APP_BASE_URL || 'http://anibalcopitan.com',
+    appBaseUrl: process.env.VUE_APP_BASE_URL || 'https://anibalcopitan.com',
     appUrlBlog: process.env.VUE_APP_URL_BLOG || 'https://blog.anibalcopitan.com',
   },
 }
