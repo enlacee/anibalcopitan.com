@@ -75,4 +75,10 @@ export default {
     appBaseUrl: process.env.VUE_APP_BASE_URL || 'https://anibalcopitan.com',
     appUrlBlog: process.env.VUE_APP_URL_BLOG || 'https://blog.anibalcopitan.com',
   },
+  /*
+   ** Router property -  https://nuxtjs.org/docs/2.x/features/file-system-routing#the-router-property
+   */
+   router: {
+    middleware: ['redirect-to-https']
+  },
 }

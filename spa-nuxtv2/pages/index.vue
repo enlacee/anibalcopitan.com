@@ -17,6 +17,7 @@
     },
     mounted() {
 
+      this.$utils.redirectToHttps();
       setTimeout(() => {
         this.goToScroll();
       }, 500);

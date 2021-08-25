@@ -14,25 +14,11 @@ const utils = {
       this.goTop(top);
     }
   },
-  goToScroll(sectionID, TheElement) {
-    console.log('seccionNameID', sectionID);
-    console.log('TheElement', TheElement);
-
-    if (sectionID) {
-
-      // SET SEO
-      const WEB_NAME_PREFIX = process.env.appName + ' - '
-      const str = sectionID;
-      const strTitle = str.charAt(0).toUpperCase() + str.slice(1);
-      document.title = WEB_NAME_PREFIX + strTitle;
-
-      // SET SECTION
-      if (TheElement) {
-        const element = TheElement; console.log('element', element);
-        const top = element.offsetTop; console.log('settt', top-60);
-        window.scrollTo(0, top-60);
-      } else {
-        console.log('no paso!!! scroll', TheElement);
+  // Util fix: trix redirect to HTTPS (obligatory)
+  redirectToHttps() {
+    if (process.env.NODE_ENV === 'production') {
+      if (location.protocol !== 'https:') {
+        location.replace(`https:${location.href.substring(location.protocol.length)}`);
       }
     }
   },
