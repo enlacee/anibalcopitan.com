@@ -13,7 +13,21 @@
 <script>
   export default {
     data() {
-      return {}
+      return {
+        title: "Blog | " + process.env.appName
+      }
+    },
+    head() {
+      return {
+        title: this.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Anibal Copitan Blog espacio y contenido del día a día con herramientas de desarrollo en Linux – ubuntu – terminal – shell – bash – software'
+          }
+        ]
+      }
     },
     mounted() {
 

@@ -50,7 +50,7 @@ export default {
     props: [],
     data() {
         return {
-            title: "Linux Fan - Software Engineer - Maker / Tester",
+            title: "Linux Fan - Software Engineer - Web / Developer",
             hide: false,
             vueAppUrlBlog: process.env.appUrlBlog
         }
