@@ -57,7 +57,9 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      lang: 'en',
+      name: process.env.VUE_APP_NAME,
+      description: process.env.VUE_APP_DESCRIPTION,
     }
   },
 
