@@ -6,6 +6,11 @@ Web project 2014, all list timeline
 
 Seo application
 
+## install with docker
+
+  docker build . # Create Image
+  docker run -p 3000:3000 <ID-IMAGE> # Create Container
+
 ## thumb website
 
 ![anibal copitan](README/thumb.png)
