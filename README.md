@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 [source project](http://startbootstrap.com/template-overviews/freelancer/)
 
@@ -16,9 +16,6 @@ Seo application
 
 ![anibal copitan](README/thumb.png)
 
-By code QR `/#qr`
-
-![anibal copitan QR](README/scrennshot-mobilele-by-qr.png)
 
 ## Project Spa web with NuxtJs
 
