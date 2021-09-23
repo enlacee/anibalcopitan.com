@@ -1,4 +1,4 @@
-# spa-nuxtv2
+# spa-nuxt v2
 
 ## Build Setup
 
@@ -16,3 +16,12 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
+
+## Development
+
+Default config not work in server **github pages**
+We need to config in `nuxt.config.js` of `_nuxt` directory to `nuxt`
+
+	build: {
+		publicPath: '/nuxt/'
+	},
