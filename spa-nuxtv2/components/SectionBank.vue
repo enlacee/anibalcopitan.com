@@ -13,10 +13,21 @@
                             <div>
                                 <p>Soles</p>
                                 <code>19121738752033</code><br/>
-                                <code>00219112173875203350</code>
-                                <p>Dolares</p>
+                                <code>CCI: 00219112173875203350</code>
+                                <p>Dollars</p>
                                 <code>19104672528124</code><br/>
-                                <code>00219110467252812452</code>
+                                <code>CCI: 00219110467252812452</code>
+                            </div>
+                        </li>
+                        <li>
+                            <h4>BBVA</h4>
+                            <div>
+                                <p>Soles</p>
+                                <code>001108140216805238</code><br/>
+                                <code>CCI: 01181400021680523815</code>
+                                <p>Dollars</p>
+                                <code>001108140217082302</code><br/>
+                                <code>CCI: 01181400021708230211</code>
                             </div>
                         </li>
                         <li>
@@ -28,7 +39,7 @@
                             <h4>BanBif</h4>
                             <p>Soles</p>
                             <code>008016038034</code><br/>
-                            <code>03820510801603803412</code>
+                            <code>CCI: 03820510801603803412</code>
                         </li>
                     </ul>
                 </div>

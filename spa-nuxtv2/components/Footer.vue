@@ -1,19 +1,24 @@
 
 <template>
-    <footer id="footer" class="text-center">
+    <footer id="footer" class="">
         <div class="footer-below">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-8">
+                        <h2>Contact</h2>
                         <p><span>From LATAM to </span><span><i class="fas fa-heart"></i></span><span> the world</span></p>
-                        <p><strong>Anibal Copitan</strong> website v2 made with (Vuejs/NuxtJs)</p>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-contact wow fadeIn">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-3">
+                        <address>
+                            <a href="mailto:contact@anibalcopitan.com">contact@anibalcopitan.com</a>
+                        </address>
                     </div>
                 </div>
             </div>

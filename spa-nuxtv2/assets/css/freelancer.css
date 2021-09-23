@@ -279,6 +279,8 @@ form .row:first-child .floating-label-form-group {
 
 footer {
     color: #fff;
+    background-color: #233140;
+    padding: 6em 0;
 }
 
 footer h3 {
@@ -295,8 +297,13 @@ footer .footer-col {
 }
 
 footer .footer-below {
-    padding: 25px 0;
-    background-color: #233140;
+    margin-bottom: 6em;
+}
+
+footer .footer-contact address a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
 }
 
 .btn-social {
