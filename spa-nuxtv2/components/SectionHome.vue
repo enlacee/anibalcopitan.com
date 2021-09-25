@@ -23,7 +23,7 @@
                                 </a>
                             </li>
 							              <li>
-                                <a href="mailto:acopitan@gmail.com" class="btn-social btn-outline"><i class="fas fa-envelope"></i></a>
+                                <a href="mailto:contact@anibalcopitan.com" class="btn-social btn-outline"><i class="fas fa-envelope"></i></a>
                             </li>
 							              <li>
                                 <a target="_blank" href="https://github.com/enlacee?tab=repositories" class="btn-social btn-outline"><i class="fab fa-github-alt"></i></a>

@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: black;
 }
 
 h1,
@@ -82,7 +82,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background-color: #333;
     min-height: 100vh;
 }
 
@@ -175,6 +175,9 @@ header #head-svg-man{
     color: white;
     background-color: black;
 }
+.navbar-default{
+    background-color: black;
+}
 .navbar-default .navbar-brand:hover {
     color: white;
 }
@@ -217,7 +220,7 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 1px #fff;
-    color: #18bc9c;
+    color: black /*#18bc9c*/;
     background: #fff;
 }
 
@@ -279,7 +282,7 @@ form .row:first-child .floating-label-form-group {
 
 footer {
     color: #fff;
-    background-color: #233140;
+    background-color: black;
     padding: 6em 0;
 }
 

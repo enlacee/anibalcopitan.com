@@ -6,6 +6,7 @@
     <SectionYape ref="yape"/>
     <SectionBank ref="bank"/>
     <SectionSkill ref="skills"/>
+    <SectionDeveloper/>
     <SectionBlog ref="blog"/>
     <Footer/>
   </div>
