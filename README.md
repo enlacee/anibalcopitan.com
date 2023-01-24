@@ -41,3 +41,7 @@ Start application:
 
     cd spa-nuxtv2/
     yarn dev
+
+## Configuration
+
+mv ./spa-nuxtv2/.env.dist ./spa-nuxtv2/.env
