@@ -8,14 +8,10 @@ Seo application
 
 ## 01. docker installation (recommended)
 
-```bash
     docker build -t anibalcopitan.com . # Create Image from Dockerfile
     # docker run -p 3000:3000 <IMAGE-NAME-OR-ID> # Create a new Container from image
-```
 
-```bash
     docker run -it --rm -p 3000:3000 -v "$PWD"/spa-nuxtv2:/usr/app:rw anibalcopitan.com sh -c 'yarn install & yarn dev'
-```
 
 Explain last command line docker (building the temporal container) (development mood)
 
