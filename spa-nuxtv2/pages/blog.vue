@@ -2,7 +2,6 @@
   <div>
     <Nav></Nav>
     <SectionHome></SectionHome>
-    <SectionQR ref="qr" title="Linux Fan - Software Engineer - Maker / Tester"/>
     <SectionYape ref="yape"/>
     <SectionBank ref="bank"/>
     <SectionSkill ref="skills"/>

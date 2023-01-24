@@ -74,6 +74,7 @@ export default {
     // baseUrl: process.env.BASE_URL || 'http://localhost:3000',
     appName: process.env.VUE_APP_NAME || 'Nuxtjs',
     appTitle: process.env.VUE_APP_TITLE || 'Nuxtjs - Home',
+    appSubTitle: process.env.VUE_APP_SUB_TITLE || 'Subtitle Home',
     appBaseUrl: process.env.VUE_APP_BASE_URL || 'https://anibalcopitan.com',
     appUrlBlog: process.env.VUE_APP_URL_BLOG || 'https://blog.anibalcopitan.com',
   },
