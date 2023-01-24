@@ -28,6 +28,8 @@ Into container box
     # yarn dev
 ```
 
+Now the project is available in the local URL: `http://localhost:3000/`
+
 ### thumb website
 
 ![anibal copitan](README/thumb.png)
