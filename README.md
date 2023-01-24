@@ -1,16 +1,13 @@
 # Portfolio | Project Spa web with NuxtJs
 
-[source project](http://startbootstrap.com/template-overviews/freelancer/)
+[source project reference](http://startbootstrap.com/template-overviews/freelancer/)
 
-Web project 2014, all list timeline
-
-Seo application
+Web project 2014, all list timeline, Seo application
 
 ## 01. docker installation (recommended)
 
-    docker build -t anibalcopitan.com . # Create Image from Dockerfile
-    # docker run -p 3000:3000 <IMAGE-NAME-OR-ID> # Create a new Container from image
-
+    # Create Image from `Dockerfile`
+    docker build -t anibalcopitan.com .
     docker run -it --rm -p 3000:3000 -v "$PWD"/spa-nuxtv2:/usr/app:rw anibalcopitan.com sh -c 'yarn install & yarn dev'
 
 Explain last command line docker (building the temporal container) (development mood)
