@@ -330,26 +330,33 @@ h1.h1-header {
     margin: 0;
     padding: 0;
 }
-/* 
+/*
 section{
     border: 1px solid red;
 } */
 
 /* MEDIA QUERYS */
 @media(max-width:420px) {
-    header .container {
-        padding-top: 15vh;
-        padding-bottom: 0;
-    }
+  h2 {
+    font-size: 42px;
+  }
+  section h2{
+    font-size: 2em;
+  }
+  header .container {
+    padding-top: 15vh;
+    padding-bottom: 0;
+  }
 	header #head-svg-man{
 		margin-bottom: 0;
 	}
-    .list-inline>li{
-    	padding-left:0;
-    }
+  .list-inline>li{
+    padding-left:0;
+    padding-bottom: 0.4em;
+  }
 	.btn-social {
-	    width: 70px;
-	    height: 70px;
-	    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
 	}
 }

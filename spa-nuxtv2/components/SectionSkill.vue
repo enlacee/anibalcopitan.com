@@ -14,7 +14,7 @@
                             <img src="~/assets/img/skills/linux.png" title="LINUX" alt="LINUX" width="400px" height="400px">
                             <div class="textoverlay">
                                 <h2>LINUX</h2>
-                                <p>El todo</p>
+                                <p>The Everything</p>
                             </div>
                         </div>
                     </div>
@@ -23,7 +23,7 @@
                             <img src="~/assets/img/skills/python.png" title="Python" alt="Python" width="400px" height="400px">
                             <div class="textoverlay">
                                 <h2>Python</h2>
-                                <p>La navaja suiza</p>
+                                <p>Utility Knife</p>
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                             <img src="~/assets/img/skills/javascript.png" title="Javascript" alt="Javascript" width="400px" height="400px">
                             <div class="textoverlay">
                                 <h2>Javascript</h2>
-                                <p>Multiplataforma</p>
+                                <p>Multi Platform</p>
                             </div>
                         </div>
                     </div>
@@ -49,14 +49,14 @@
             </div>
         </div>
     </section>
-    
+
 </template>
 <script>
 export default {
     name: 'SectionSkill',
     data() {
         return {
-            title: "Skills"
+            title: "Technologies"
         };
     }
 }
@@ -87,9 +87,6 @@ export default {
         margin: 0;
     }
     @media (max-width: 768px) {
-        section h2 {
-            font-size: 1.8em;
-        }
         .item div img {
             width: 250px;
             height: 250px;

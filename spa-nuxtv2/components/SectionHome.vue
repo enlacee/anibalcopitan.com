@@ -8,7 +8,7 @@
                     </div>
                     <div id="list-conctact" class="intro-text">
                         <ul id="list-inline" class="list-inline">
-                            <li>
+                            <li class="hidden-xs">
                                 <a target="_blank" :href="vueAppUrlBlog" class="btn-social btn-outline">
                                     <i class="fab fa-blogger-b"></i>
                                 </a>
@@ -17,15 +17,15 @@
                                 <a target="_blank" href="https://wa.link/s7q46e"
                                 class="btn-social btn-outline"><i class="fab fa-whatsapp"></i></a>
                             </li>
-                            <li>
+                            <li class="hidden-xs">
                                 <a target="_blank" href="https://twitter.com/enlacee" class="btn-social btn-outline">
                                     <i class="fab fa-twitter"></i>
                                 </a>
                             </li>
-							              <li>
+							              <li class="hidden-xs">
                                 <a href="mailto:contact@anibalcopitan.com" class="btn-social btn-outline"><i class="fas fa-envelope"></i></a>
                             </li>
-							              <li>
+							              <li class="hidden-xs">
                                 <a target="_blank" href="https://github.com/enlacee?tab=repositories" class="btn-social btn-outline"><i class="fab fa-github-alt"></i></a>
                             </li>
                             <li>

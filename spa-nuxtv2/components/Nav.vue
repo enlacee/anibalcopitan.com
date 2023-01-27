@@ -27,7 +27,7 @@
                     <a href="/#blog"><i class="fas fa-code"></i>Blog</a>
                   </li>
                   <li>
-                    <a href="/#skills">Skills</a>
+                    <a href="/#skills">Technologies</a>
                   </li>
               </ul>
           </div>
