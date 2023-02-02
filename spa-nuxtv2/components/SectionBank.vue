@@ -31,16 +31,17 @@
                             </div>
                         </li>
                         <li>
+                          <h4>BanBif</h4>
+                          <p>Soles</p>
+                          <code>008016038034</code><br/>
+                          <code>CCI: 03820510801603803412</code>
+                        </li>
+                        <li>
                             <h4>Interbank</h4>
                             <p>Soles</p>
                             <code>6393098282175</code>
                         </li>
-                        <li>
-                            <h4>BanBif</h4>
-                            <p>Soles</p>
-                            <code>008016038034</code><br/>
-                            <code>CCI: 03820510801603803412</code>
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -88,5 +89,11 @@ export default {
         font-size: 1.9em;
         border-bottom: 1px solid #eee;
         line-height: 1.5em;
+    }
+    @media (max-width: 420px) {
+      ul li {
+        min-height: 270px;
+        margin-bottom:0.9em;
+      }
     }
 </style>
