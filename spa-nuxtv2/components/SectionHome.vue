@@ -8,7 +8,7 @@
                     </div>
                     <div id="list-conctact" class="intro-text">
                         <ul id="list-inline" class="list-inline">
-                            <li class="hidden-xs">
+                            <li>
                                 <a target="_blank" :href="vueAppUrlBlog" class="btn-social btn-outline">
                                     <i class="fab fa-blogger-b"></i>
                                 </a>
