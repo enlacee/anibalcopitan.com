@@ -10,6 +10,16 @@ Web project 2014, all list timeline, Seo application
     docker build -t anibalcopitan.com .
     docker run -it --rm -p 3000:3000 -v "$PWD"/spa-nuxtv2:/usr/app:rw anibalcopitan.com sh -c 'yarn install & yarn dev'
 
+## 01.1 if fail the previus command
+
+You needed debuger step to step the image `Dockerfile` or docker command
+
+    docker build -t anibalcopitan.com .
+    docker run -it --rm -p 3000:3000 -v "$PWD"/spa-nuxtv2:/usr/app:rw anibalcopitan.com sh
+    # into bash
+    yarn install
+    yarn dev
+
 Explain last command line docker (building the temporal container) (development mood)
 
 * `-it`             => Iteractive container

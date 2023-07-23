@@ -1,4 +1,5 @@
-FROM node:10.24-alpine
+# FROM node:10.24-alpine
+FROM node:14.18.0-alpine
 
 WORKDIR /usr/app
 # Available to mount the volumen on container
