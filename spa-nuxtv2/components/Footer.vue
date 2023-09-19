@@ -6,7 +6,9 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <h2>Contact</h2>
-                        <p><span>From LATAM to </span><span><i class="fas fa-heart"></i></span><span> the world</span></p>
+                        <p>Feel it free to write me for any questions about this content or anything you have in your mind<br/>
+                        If You need any Support/Help with your project or job Just send me a message I'm in the other site of Internet ":> <span><i class="fas fa-heart"></i></span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -50,7 +52,7 @@ export default {
             const primaryValue = elButton.innerText;
             elButton.innerText = 'Copied!'
             elButton.setAttribute('disabled', 'disabled');
-            setTimeout(function(){ 
+            setTimeout(function(){
                 elButton.removeAttribute('disabled');
                 elButton.innerText = primaryValue;
             }, 700);

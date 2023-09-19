@@ -9,12 +9,12 @@
             </div>
             <div class="row">
                 <div id="owl-demo" class="owl-carousel owl-theme">
-                    <div class="item">
+                  <div class="item">
                         <div class="img-responsive">
-                            <img src="~/assets/img/skills/linux.png" title="LINUX" alt="LINUX" width="400px" height="400px">
+                            <img src="~/assets/img/skills/javascript.png" title="Javascript" alt="Javascript" width="400px" height="400px">
                             <div class="textoverlay">
-                                <h2>LINUX</h2>
-                                <p>The Everything</p>
+                                <h2>Javascript</h2>
+                                <p>Multi Platform</p>
                             </div>
                         </div>
                     </div>
@@ -29,19 +29,19 @@
                     </div>
                     <div class="item">
                         <div class="img-responsive">
-                            <img src="~/assets/img/skills/javascript.png" title="Javascript" alt="Javascript" width="400px" height="400px">
+                            <img src="~/assets/img/skills/php.png" title="PHP" alt="PHP" width="400px" height="400px">
                             <div class="textoverlay">
-                                <h2>Javascript</h2>
-                                <p>Multi Platform</p>
+                                <h2>PHP</h2>
+                                <p>Zend-Framework, Laravel</p>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="img-responsive">
-                            <img src="~/assets/img/skills/php.png" title="PHP" alt="PHP" width="400px" height="400px">
+                            <img src="~/assets/img/skills/linux.png" title="LINUX" alt="LINUX" width="400px" height="400px">
                             <div class="textoverlay">
-                                <h2>PHP</h2>
-                                <p>Zend-Framework, Laravel</p>
+                                <h2>LINUX</h2>
+                                <p>The Everything</p>
                             </div>
                         </div>
                     </div>

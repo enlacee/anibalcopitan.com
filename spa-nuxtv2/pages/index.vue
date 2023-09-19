@@ -4,6 +4,8 @@
     <SectionHome></SectionHome>
     <SectionYape ref="yape"/>
     <SectionBank ref="bank"/>
+    <SectionEbook/>
+    <SectionPortfolio/>
     <SectionSkill ref="skills"/>
     <SectionBlog ref="blog"/>
     <Footer/>
