@@ -36,6 +36,9 @@ Into container box
 ```bash
     docker exec -i -t <dd28fae674bb> sh
     # yarn dev
+    # yarn build
+    # yarn generate
+    # cp -r ./spa-nuxtv2/dist/* .
 ```
 
 Now the project is available in the local URL: `http://localhost:3000/`
