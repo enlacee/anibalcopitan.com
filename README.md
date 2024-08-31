@@ -43,10 +43,19 @@ Into container box
 
 Now the project is available in the local URL: `http://localhost:3000/`
 
-### thumb website
+### website
 
-![anibal copitan](README/thumb.png)
+v1: simple integration
 
+![website](README/v1.png)
+
+v2: Custom font and color black and white
+
+![website](README/v2.png)
+
+v3: Marca personal simple the first view (desktop/mobile)
+
+![website](README/v3.png)
 
 ## 02. simple Installation
 

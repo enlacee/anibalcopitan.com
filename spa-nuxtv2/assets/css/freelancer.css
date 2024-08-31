@@ -58,7 +58,7 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: #fff;
+    /*border-color: #fff;*/
 }
 
 hr.star-light:after {
@@ -81,13 +81,13 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #fff;
-    background-color: #333;
+    /*color: #fff;*/
+    /*background-color: #333;*/
     min-height: 100vh;
 }
 
 header .container {
-    padding-top: 30vh;
+    padding-top: 20vh;
     padding-bottom: 50px;
 }
 
@@ -210,7 +210,7 @@ section.success {
 .btn-outline {
     border: solid 1px #fff;
     font-size: 20px;
-    color: #fff;
+    /*color: #fff;*/
     background: 0 0;
     transition: all .3s ease-in-out;
 }
@@ -313,10 +313,11 @@ footer .footer-contact address a{
     display: inline-block;
     width: 100px;
     height: 100px;
-    border-radius: 100%;
+    /*border-radius: 100%;*/
     text-align: center;
-    font-size: 2.3em;
+    font-size: 3.3em;
     line-height: 100px;
+    border: 1px solid #000000;
 }
 
 .btn:focus,
@@ -338,7 +339,7 @@ section{
 /* MEDIA QUERYS */
 @media(max-width:420px) {
   h2 {
-    font-size: 42px;
+    font-size: 22px;
   }
   section h2{
     font-size: 2em;

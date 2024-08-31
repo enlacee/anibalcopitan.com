@@ -4,6 +4,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div id="head-svg-man">
+                        <!-- Contenedor para la foto de perfil -->
+                        <div id="profile-picture">
+                            <img src="~/assets/img/1689288186265.jpeg" alt="Aníbal Copitan">
+                        </div>
                         <h2>{{ title }}</h2>
                     </div>
                     <div id="list-conctact" class="intro-text">
@@ -17,15 +21,17 @@
                                 <a target="_blank" href="https://wa.link/s7q46e"
                                 class="btn-social btn-outline"><i class="fab fa-whatsapp"></i></a>
                             </li>
+                            <!--
                             <li class="hidden-xs">
                                 <a target="_blank" href="https://twitter.com/enlacee" class="btn-social btn-outline">
                                     <i class="fab fa-twitter"></i>
                                 </a>
                             </li>
-							              <li class="hidden-xs">
+	                        <li class="hidden-xs">
                                 <a href="mailto:contact@anibalcopitan.com" class="btn-social btn-outline"><i class="fas fa-envelope"></i></a>
                             </li>
-							              <li class="hidden-xs">
+                            -->
+			                <li class="hidden-xs">
                                 <a target="_blank" href="https://github.com/enlacee?tab=repositories" class="btn-social btn-outline"><i class="fab fa-github-alt"></i></a>
                             </li>
                             <li>
@@ -66,3 +72,18 @@ export default {
     }
 }
 </script>
+<style scoped>
+#profile-picture {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#profile-picture img {
+    border-radius: 50%;
+    width: 120px; /* Ajusta el tamaño según tu diseño */
+    height: 120px;
+    object-fit: cover;
+    border: 2px solid #ddd; /* Borde sutil para destacar la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para un efecto profesional */
+}
+</style>
