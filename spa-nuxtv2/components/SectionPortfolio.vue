@@ -17,20 +17,20 @@
                             <img src="~/assets/img/portfolio/okeypay.png" title="OkeyPay" alt="OkeyPay" width="400px" height="400px">
                             <div class="textoverlay">
                               <h2>OkeyPay</h2>
-                              <p>Yape payment verifier,  avoiding scams</p>
-                              <p>Stack: Kotlin/JS - GoogleCloudPlatform</p>
+                              <p>Yape payment verifier</p>
+                              <p>Kotlin/JS - GoogleCloudPlatform</p>
                             </div>
                           </a>
                         </div>
                     </div>
                     <div class="item">
                         <div class="img-responsive">
-                          <a href="https://rentando.blogspot.com/" target="_blank">
+                          <a href="https://reservatotal.anibalcopitan.com/" target="_blank">
                             <img src="~/assets/img/portfolio/rentando.png" title="Rentando" alt="Rentando" width="400px" height="400px">
                             <div class="textoverlay">
-                                <h2>Rentando</h2>
-                                <p>Renting of soccer field by hours</p>
-                                <p>Stack: VueJS 3/TailwindCss (vite/vitest)</p>
+                                <h2>Reserva Total</h2>
+                                <p>Renting of soccer field</p>
+                                <p>Vue JS 3 - TailwindCss</p>
                             </div>
                           </a>
                         </div>
@@ -45,7 +45,7 @@ export default {
     // name: 'SectionSkill',
     data() {
         return {
-            title: "portfolio"
+            title: "projects"
         };
     }
 }

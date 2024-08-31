@@ -5,9 +5,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <h2>Contact</h2>
-                        <p>Feel it free to write me for any questions about this content or anything you have in your mind<br/>
-                        If You need any Support/Help with your project or job Just send me a message I'm in the other site of Internet ":> <span><i class="fas fa-heart"></i></span>
+                        <h2>Contact Me</h2>
+                        <p>Have questions or need support? Feel free to reach out!
                         </p>
                     </div>
                 </div>

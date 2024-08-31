@@ -26,7 +26,7 @@ export default {
     name: 'SectionBlog',
     data() {
       return {
-        title: "Latest Articles",
+        title: "Read My Latest Blog Posts",
         posts: [],
         vueAppUrlBlog: process.env.appUrlBlog
       }
