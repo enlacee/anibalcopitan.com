@@ -25,9 +25,6 @@
                   <li>
                     <a href="#blog" @click="scrollTo('blog', $event)"><i class="fas fa-code"></i>Blog</a>
                   </li>
-                  <li>
-                    <a href="#skills" @click="scrollTo('skills', $event)">Technologies</a>
-                  </li>
               </ul>
           </div>
           <!-- /.navbar-collapse -->

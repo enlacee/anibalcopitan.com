@@ -2,12 +2,12 @@
   <div>
     <NavHome></NavHome>
     <SectionHome></SectionHome>
-    <StoreView></StoreView>
-    <SectionPortfolio/>
-    <SectionYape ref="yape"/>
-    <SectionBank ref="bank"/>
+    <StoreView :isExpanded="true"></StoreView>
+    <!-- <SectionPortfolio/> -->
+    <!-- <SectionYape ref="yape"/> -->
+    <!-- <SectionBank ref="bank"/> -->
     <SectionEbook/>
-    <SectionSkill ref="skills"/>
+    <!-- <SectionSkill ref="skills"/> -->
     <SectionBlog ref="blog"/>
     <Footer/>
   </div>

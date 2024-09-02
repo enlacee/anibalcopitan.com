@@ -39,7 +39,7 @@
     export default {
       data() {
         return {
-          title: "Store / Tienda | " + process.env.appName
+          title: "Tienda | " + process.env.appName
         }
       },
       head() {
@@ -49,12 +49,12 @@
             {
               hid: 'description',
               name: 'description',
-              content: 'Store / Tienda "scripts", "proyectos para desarrolladores", "herramientas para programadores'
+              content: 'Tienda "scripts", "proyectos para desarrolladores", "herramientas para programadores'
             },
             {
               hid: 'og:description',
               name: 'og:description',
-              content: 'Store / Tienda "scripts", "proyectos para desarrolladores", "herramientas para programadores'
+              content: 'Tienda "scripts", "proyectos para desarrolladores", "herramientas para programadores'
             },
             {
               hid: 'og:title',

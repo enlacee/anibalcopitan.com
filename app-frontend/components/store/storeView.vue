@@ -11,53 +11,83 @@
 
                 <div class="product-grid">
                     <!-- Producto 1 -->
-                    <a href="#">
                         <div class="product-card">
                             <div class="badges">
                                 <span class="badge" data-type="gratis">Gratis</span>
+                                <span class="badge">Web App</span>
                             </div>
-                            <img src="https://via.placeholder.com/300x150" alt="Producto 1">
+                            <img src="~/assets/img/code-design.png" alt="Producto 1">
                             <h2>Tareas aleatoreas</h2>
                             <p>JS</p>
+                            <div class="payment-buttons">
+                                <a href="http://enlacee.github.io/tareas-random" target="_blank" class="btn" rel="noopener noreferrer">Ver Demo</a>
+                                <button class="btn free" data-url="https://github.com/enlacee/tareas-random/archive/refs/tags/first.zip"
+                                @click="handleClick"
+                                >Descargar Gratis</button>
+                                <!-- <a href="#" target="_blank" class="btn" rel="noopener noreferrer">Más Información</a> -->
+                            </div>
                         </div>
-                    </a>
                 
                     <!-- Producto 2 -->
-                    <a href="#">
+
                         <div class="product-card">
                             <div class="badges">
                                 <span class="badge" data-type="de-pago">De Pago</span>
+                                <span class="badge">Web App</span>
                             </div>
-                            <img src="https://via.placeholder.com/300x150" alt="Producto 2">
+                            <img src="~/assets/img/code-design.png" alt="Producto 2">
                             <h2>Simple youtube</h2>
-                            <p>Php - Js - Apache</p>
+                            <p>PHP - JS</p>
+                            <div class="payment-buttons">
+                                <a href="http://local.anibalcopitan.com/projects/simple-youtube/index.php?q=maria" target="_blank" class="btn" rel="noopener noreferrer">Ver Demo</a>
+                                <button class="btn yape"
+                                @click="handleClick"
+                                data-url="https://wa.me/51970142637?text=Hola,%20quiero%20comprar%20el%20producto%20SIMPLE%20YOUTUBE.%20Voy%20a%20realizar%20el%20pago%20de%20$2%20USD%20o%20S/7.50%20(equivalente%20en%20soles).%20Por%20favor,%20confirma%20una%20vez%20que%20hayas%20recibido%20el%20pago.%20¡Gracias!"
+                                >Comprar con Yape</button>
+                                <button class="btn paypal"
+                                @click="handleClick"
+                                data-url="https://wa.me/51970142637?text=Para%20comprar%20SIMPLE%20YOUTUBE,%20transfiere%20$2%20USD%20o%20S/7.50%20a%20nuestro%20PayPal:%20acopitan@gmail.com.%20Luego,%20confirma%20aquí%20para%20procesar%20tu%20pedido.%20¡Gracias!"
+                                >Comprar con PayPal</button>
+                                <!-- <a href="#" target="_blank" class="btn" rel="noopener noreferrer">Más Información</a> -->
+                            </div>
                         </div>
-                    </a>
+
 
                     <!-- Producto 3 -->
-                    <a href="#">
                         <div class="product-card">
                             <div class="badges">
+                                <span class="badge" data-type="gratis">Gratis en la Nube</span>
                                 <span class="badge" data-type="sass">Sass</span>
+                                <span class="badge">Android App</span>
                                 <span class="badge">🇵🇪</span>
                             </div>
-                            <img src="https://via.placeholder.com/300x150" alt="Producto 3">
+                            <img src="~/assets/img/code-design.png" alt="Producto 3">
                             <h2>OkeyPay</h2>
                             <p>Agrega funcionalidades Yape</p>
+                            <div class="payment-buttons">
+                                <button class="btn" data-url="https://okeypay.anibalcopitan.com/"
+                                @click="handleClick">Usar Ahora</button>
+                            </div>
                         </div>
-                    </a>
 
-                    <a href="#">
                         <div class="product-card">
                             <div class="badges">
+                                <span class="badge" data-type="gratis">Gratis en la Nube</span>
                                 <span class="badge" data-type="sass">Sass</span>
+                                <span class="badge">Web App</span>
+                                <span class="badge">Android App</span>
+                                <span class="badge">Pago Online</span>
+                                
                                 <span class="badge">🇵🇪</span>
                             </div>
-                            <img src="https://via.placeholder.com/300x150" alt="Producto 3">
+                            <img src="~/assets/img/code-design.png" alt="Producto 3">
                             <h2>ReservaTotal</h2>
                             <p>Reserva y paga con Yape</p>
+                            <div class="payment-buttons">
+                                <button class="btn" data-url="https://reservatotal.anibalcopitan.com/"
+                                @click="handleClick">Usar Ahora</button>
+                            </div>
                         </div>
-                    </a>
 
                     <!-- <a href="#">
                         <div class="product-card">
@@ -73,27 +103,51 @@
                 </div>
             </div>
 
-            <div class="row">
+            <!-- <div class="row">
                 <a href="/store" class="cta-button">Ir a la tienda</a>
-            </div>
+            </div> -->
         </div>
     </section>
 </template>
 <script>
 export default {
-    // name: 'SectionSkill',
+    props: {
+        isExpanded: {
+            type: Boolean,
+            default: false,
+        },
+    },
     data() {
         return {
-            title: "Tienda"
+            title: "Tienda",
+            linkTienda: this.isExpanded === true ? '#' : '/tienda',
+            linkTiendaOnclick: this.isExpanded === true ? 'return false;' : '' 
         };
-    }
+    },
+    methods: {
+        handleClick(event) {
+            const url = event.target.getAttribute('data-url');
+            if (url) {
+                // window.location.href = url; // Redirige a la URL
+                window.open(url, '_blank', 'noopener,noreferrer');
+            }
+        }
+  }
 }
 </script>
 <style scoped>
-  a:hover, a:focus{
-    text-decoration: none;
-  }
+#store{
+    background-color: gray;
+}
 
+a:hover, a:focus{
+text-decoration: none;
+}
+
+.btn {
+    margin-bottom: 2px;
+    background-color: buttonface;
+}
 
 
 
@@ -111,6 +165,10 @@ export default {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 300px;
+
+    /* min-width: 300px; */
+
+    /* max-width: 300px; */
     text-align: center;
     padding: 20px;
     transition: transform 0.3s ease;
@@ -136,10 +194,12 @@ export default {
     top: 10px;
     left: 10px;
     display: flex;
-    gap: 5px;
+    gap: 2px;
+    flex-wrap: wrap;
 }
 .product-card .badge {
-    background: #007bff; /* Color predeterminado */
+    /* background: #007bff; */
+
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
