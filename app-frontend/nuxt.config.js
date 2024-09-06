@@ -49,7 +49,16 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+
+    '@nuxtjs/gtm'
   ],
+
+  // Google Tag Manager (anibalcopitan.com) custum this if you need track this tracker
+  gtm: {
+    id: 'GTM-MH6GPPL3',
+    enabled: process.env.NODE_ENV === 'production', // Activar solo en producción
+    debug: true // Habilitar modo debug
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
