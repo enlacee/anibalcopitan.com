@@ -21,7 +21,7 @@
                             <p>JS</p>
                             <div class="payment-buttons">
                                 <a href="http://enlacee.github.io/tareas-random" target="_blank" class="btn" rel="noopener noreferrer">Ver Demo</a>
-                                <button class="btn free" data-url="https://github.com/enlacee/tareas-random/archive/refs/tags/first.zip"
+                                <button class="btn free" data-url="https://github.com/enlacee/tareas-random/archive/refs/heads/master.zip"
                                 @click="handleClick"
                                 >Descargar Gratis</button>
                                 <!-- <a href="#" target="_blank" class="btn" rel="noopener noreferrer">Más Información</a> -->
