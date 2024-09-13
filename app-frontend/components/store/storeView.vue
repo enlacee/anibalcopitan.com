@@ -10,26 +10,43 @@
             <div class="row">
 
                 <div class="product-grid">
-                    <!-- Producto 1 -->
-                        <div class="product-card">
+                    <!-- Producto 3 -->
+                    <div class="product-card">
+                        <div class="badges">
+                            <span class="badge" data-type="gratis">Gratis en la Nube</span>
+                            <span class="badge" data-type="">Sass</span>
+                            <span class="badge">Web App</span>
+                            <span class="badge">Android App</span>
+                            <span class="badge">Pago Online</span>
+                            
+                            <span class="badge">🇵🇪</span>
+                        </div>
+                        <img src="~/assets/img/code-design.png" alt="Producto 3">
+                        <h2>ReservaTotal</h2>
+                        <p>Reserva y paga con Yape</p>
+                        <div class="payment-buttons">
+                            <button class="btn" data-url="https://reservatotal.anibalcopitan.com/"
+                            @click="handleClick">Usar Ahora</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
                             <div class="badges">
-                                <span class="badge" data-type="gratis">Gratis</span>
-                                <span class="badge">Web App</span>
+                                <span class="badge" data-type="gratis">Gratis en la Nube</span>
+                                <span class="badge" data-type="">Sass</span>
+                                <span class="badge">Android App</span>
+                                <span class="badge">🇵🇪</span>
                             </div>
-                            <img src="~/assets/img/code-design.png" alt="Producto 1">
-                            <h2>Tareas aleatoreas</h2>
-                            <p>JS</p>
+                            <img src="~/assets/img/code-design-okey-pay.png" alt="Producto 3">
+                            <h2>OkeyPay</h2>
+                            <p>Agrega funcionalidades Yape</p>
                             <div class="payment-buttons">
-                                <a href="http://enlacee.github.io/tareas-random" target="_blank" class="btn" rel="noopener noreferrer">Ver Demo</a>
-                                <button class="btn free" data-url="https://github.com/enlacee/tareas-random/archive/refs/heads/master.zip"
-                                @click="handleClick"
-                                >Descargar Gratis</button>
-                                <!-- <a href="#" target="_blank" class="btn" rel="noopener noreferrer">Más Información</a> -->
+                                <button class="btn" data-url="https://okeypay.anibalcopitan.com/"
+                                @click="handleClick">Usar Ahora</button>
                             </div>
                         </div>
-                
-                    <!-- Producto 2 -->
 
+                        <!-- Producto 1 -->
                         <div class="product-card">
                             <div class="badges">
                                 <span class="badge" data-type="de-pago">De Pago</span>
@@ -52,40 +69,21 @@
                             </div>
                         </div>
 
-
-                    <!-- Producto 3 -->
+                        <!-- Producto 2 -->
                         <div class="product-card">
                             <div class="badges">
-                                <span class="badge" data-type="gratis">Gratis en la Nube</span>
-                                <span class="badge" data-type="sass">Sass</span>
-                                <span class="badge">Android App</span>
-                                <span class="badge">🇵🇪</span>
-                            </div>
-                            <img src="~/assets/img/code-design.png" alt="Producto 3">
-                            <h2>OkeyPay</h2>
-                            <p>Agrega funcionalidades Yape</p>
-                            <div class="payment-buttons">
-                                <button class="btn" data-url="https://okeypay.anibalcopitan.com/"
-                                @click="handleClick">Usar Ahora</button>
-                            </div>
-                        </div>
-
-                        <div class="product-card">
-                            <div class="badges">
-                                <span class="badge" data-type="gratis">Gratis en la Nube</span>
-                                <span class="badge" data-type="sass">Sass</span>
+                                <span class="badge" data-type="gratis">Gratis</span>
                                 <span class="badge">Web App</span>
-                                <span class="badge">Android App</span>
-                                <span class="badge">Pago Online</span>
-                                
-                                <span class="badge">🇵🇪</span>
                             </div>
-                            <img src="~/assets/img/code-design.png" alt="Producto 3">
-                            <h2>ReservaTotal</h2>
-                            <p>Reserva y paga con Yape</p>
+                            <img src="~/assets/img/code-design.png" alt="Producto 1">
+                            <h2>Tareas aleatoreas</h2>
+                            <p>JS</p>
                             <div class="payment-buttons">
-                                <button class="btn" data-url="https://reservatotal.anibalcopitan.com/"
-                                @click="handleClick">Usar Ahora</button>
+                                <a href="http://enlacee.github.io/tareas-random" target="_blank" class="btn" rel="noopener noreferrer">Ver Demo</a>
+                                <button class="btn free" data-url="https://github.com/enlacee/tareas-random/archive/refs/heads/master.zip"
+                                @click="handleClick"
+                                >Descargar Gratis</button>
+                                <!-- <a href="#" target="_blank" class="btn" rel="noopener noreferrer">Más Información</a> -->
                             </div>
                         </div>
 
@@ -146,7 +144,8 @@ text-decoration: none;
 
 .btn {
     margin-bottom: 2px;
-    background-color: buttonface;
+    background-color: black;
+    color: white;
 }
 
 
