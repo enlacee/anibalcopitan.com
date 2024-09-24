@@ -75,6 +75,12 @@
                             <li>
                                 <a target="_blank" href="https://www.linkedin.com/in/9703b1149/" class="btn-social btn-outline"><i class="fab fa-linkedin-in"></i></a>
                             </li>
+
+                            <li>
+                                <a href="#store" class="btn-social btn-outline cta">
+                                    <span>ver proyectos 🚀</span>
+                                </a>
+                            </li>
                         </ul>
                         <hr class="star-light">
                         <p class="skills">
@@ -185,6 +191,15 @@ export default {
   outline: none;
 }
 
+.cta {
+    /* color: #0056b3;  Color azul */
+    text-decoration: none;
+    width: auto;
+    padding: 0 2px;
+}
+.cta:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
 
 /* Media Query para móviles */
 @media (max-width: 600px) {
@@ -196,8 +211,17 @@ export default {
         flex-wrap: wrap;
         align-items: center;
     } */
-.icon {
-    display: none;
+    .icon {
+        display: none;
+    }
+
+    #profile-picture {
+        margin-top: auto;
+    }
+
+    #profile-picture img {
+        width: 90px;
+        height: 90px;
     }
 }
 </style>

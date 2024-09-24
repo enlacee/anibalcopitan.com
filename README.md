@@ -15,13 +15,14 @@ Web project 2014, all list timeline, Seo application
 
 You needed debuger step to step the image `Dockerfile` or docker command
 
+```bash
     cd app-frontend
     docker build -t anibalcopitan.com .
     docker run -it --rm -p 3000:3000 -v "$PWD":/usr/app:rw anibalcopitan.com sh
     # into bash
     yarn install
     yarn dev
-
+```
 Explain last command line docker (building the temporal container) (development mood)
 
 * `-it`             => Iteractive container
