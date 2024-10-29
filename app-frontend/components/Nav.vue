@@ -24,7 +24,7 @@
                   </li>
                   <li>
                     <!-- <NuxtLink to="/blog"><i class="fas fa-code"></i>Blog</NuxtLink> -->
-                    <a href="/#blog"><i class="fas fa-code"></i>Blog</a>
+                    <a href="https://blog.anibalcopitan.com/"><i class="fas fa-code"></i>Blog</a>
                   </li>
                   <li>
                     <a href="/#skills">Technologies</a>

@@ -23,7 +23,7 @@
                       <a href="#page-top"></a>
                   </li>
                   <li>
-                    <a href="#blog" @click="scrollTo('blog', $event)"><i class="fas fa-code"></i>Blog</a>
+                    <a href="https://blog.anibalcopitan.com/"><i class="fas fa-code"></i>Blog</a>
                   </li>
               </ul>
           </div>

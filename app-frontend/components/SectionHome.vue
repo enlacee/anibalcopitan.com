@@ -24,29 +24,19 @@
                     </div> -->
                     <div class="form-container">
                         <form class="subscription-form" action="https://anibalcopitan.us22.list-manage.com/subscribe/post?u=e9c62af441ddf5ac2469a4cf0&amp;id=f6003e68eb&amp;f_id=00fdd7e1f0" method="POST">
-                            <p class="form-description">
-                                ¡Descarga tu eBook de Linux y suscríbete a nuestras novedades!
-    </p>
+                            <p class="form-description">¡Descarga tu eBook de Linux y suscríbete a nuestras novedades!</p>
                             <div class="input-group">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="icon-svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"></path>
                                 </svg>
-
-                                
                             </div>
                             <input type="email" autocomplete="email" required placeholder="Tu correo electrónico" name="EMAIL" class="email-input">
-                            
                             <input type="submit" value="¡Descarga y suscríbete!" class="submit-btn">
                             </div>
-
-                            <p class="form-note" style="font-size: 12px; padding-top: 0.5em;">No compartiremos tu correo. Puedes darte de baja en cualquier momento.</p>
-
+                            <p class="form-note" style="font-size: 12px; padding-top: 0.5em;">¡Gracias por suscribirte! Revisa tu correo para descargar tu libro. Puedes darte de baja cuando quieras.</p>
                         </form>
                     </div>
-
-
-
 
                     <div id="list-conctact" class="intro-text">
                         <ul id="list-inline" class="list-inline">
@@ -69,7 +59,7 @@
                                 <a href="mailto:contact@anibalcopitan.com" class="btn-social btn-outline"><i class="fas fa-envelope"></i></a>
                             </li>
                             -->
-			                <li class="hidden-xs">
+			                <li>
                                 <a target="_blank" href="https://github.com/enlacee?tab=repositories" class="btn-social btn-outline"><i class="fab fa-github-alt"></i></a>
                             </li>
                             <li>
