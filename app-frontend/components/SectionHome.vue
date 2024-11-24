@@ -24,7 +24,7 @@
                     </div> -->
                     <div class="form-container">
                         <form class="subscription-form" action="https://anibalcopitan.us22.list-manage.com/subscribe/post?u=e9c62af441ddf5ac2469a4cf0&amp;id=f6003e68eb&amp;f_id=00fdd7e1f0" method="POST">
-                            <p class="form-description">¡Descarga tu eBook de Linux y suscríbete a nuestras novedades!</p>
+                            <p class="form-description">¡Descarga tu eBook de <b>Linux</b> y suscríbete a nuestras novedades!</p>
                             <div class="input-group">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="icon-svg">
