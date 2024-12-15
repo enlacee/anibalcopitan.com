@@ -187,7 +187,7 @@ header #head-svg-man{
     border: 0;
 }
 
-section {
+section:not(:last-child) {
     padding: 3em 0;
 }
 
