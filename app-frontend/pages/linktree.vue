@@ -1,4 +1,5 @@
 <template>
+  <div class="main-layout">
     <div class="profile-card">
 
         <img src="~/assets/img/profile-tiktok.jpg" alt="Anibal tiktok" class="profile-pic"/>
@@ -10,7 +11,7 @@
         <a class="button" href="https://wa.me/51970142637?text=Hola%2C%20Anibal%20tengo%20una%20consulta">
           <i class="fab fa-whatsapp"></i> ¿Tienes una consulta?
         </a>
-<!--         <button>Podcast</button> -->
+  <!--         <button>Podcast</button> -->
         <a class="button" href="https://blog.anibalcopitan.com">Blog</a>
 
         <div class="social-icons">
@@ -33,6 +34,7 @@
         <footer>Inspired By Buffer</footer>
         <hr/> <!-- add for load font fontawesome -->
     </div>
+  </div>
 </template>
 <script>
   export default {
@@ -77,11 +79,53 @@
 </script>
 <style scoped>
 
-.profile-card {
-    width: 300px;
-    padding: 20px;
-    text-align: center;
+/**
+ * Bug: using simple flexbox
+**/
 
+/*
+.main-layout {
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  border: 2px solid blue;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+*/
+
+/**
+ * Using vh and vw with Margins (margin: 0;)
+ **/
+
+.main-layout {
+  background-color: #eaeaea;
+  width: 300px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  /* border: 2px solid blue; */
+}
+
+.profile-card {
+  text-align: center;
+  width: 300px;
+  padding: 20px;
 }
 
 .profile-pic {

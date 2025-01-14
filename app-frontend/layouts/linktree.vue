@@ -1,16 +1,16 @@
 <template>
-  <div class="main-layout">
+  <div class="layout-linktree">
     <Nuxt />
   </div>
 </template>
-
 <style scoped>
-.main-layout {
+.layout-linktree{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  z-index: -1; /* Asegura que el fondo esté detrás de main-layout */
 }
 </style>
