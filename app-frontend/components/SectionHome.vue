@@ -46,7 +46,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://wa.link/s7q46e"
+                                <a target="_blank" href="https://wa.me/51970142637?text=Hola%20te%20contacto%20desde%20https%3A%2F%2Fanibalcopitan.com"
                                 class="btn-social btn-outline"><i class="fab fa-whatsapp"></i></a>
                             </li>
                             <!--
