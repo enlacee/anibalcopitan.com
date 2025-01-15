@@ -24,6 +24,7 @@ export default {
   ],
 
   layout: {
+    'default': [],
     'linktree': []
   },
 

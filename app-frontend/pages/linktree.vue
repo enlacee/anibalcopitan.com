@@ -8,12 +8,6 @@
         <p>Te ayudo a alcanzar tus metas con software</p>
         <p>🐧 Linux - Dev - Side-Projects</p>
 
-        <a class="button" href="https://wa.me/51970142637?text=Hola%2C%20Anibal%20tengo%20una%20consulta">
-          <i class="fab fa-whatsapp"></i> ¿Tienes una consulta?
-        </a>
-  <!--         <button>Podcast</button> -->
-        <a class="button" href="https://blog.anibalcopitan.com">Blog</a>
-
         <div class="social-icons">
             <span>
               <a href="https://www.youtube.com/@anibal-linux">
@@ -30,6 +24,33 @@
                 <i class="fas fa-globe"></i>
               </a>
             </span>
+        </div>
+
+        <a class="button" href="https://wa.me/51970142637?text=Hola%2C%20Anibal%20tengo%20una%20consulta">
+          <i class="fab fa-whatsapp"></i> ¿Tienes una consulta?
+        </a>
+  <!--         <button>Podcast</button> -->
+        <a class="button" href="https://blog.anibalcopitan.com">Blog</a>
+
+
+
+        <div class="products">
+          <button class="button"><p>PRODUCTOS DIGITALES</p></button>
+
+          <div class="product">
+            <a href="https://okeypay.anibalcopitan.com/" target="_blank" rel="noopener" title="okeypay">
+              <img width="150" src="~/assets/img/code-design-okey-pay.png" alt="okeypay" class="img-thumbnail"/>
+              <p>Verifica pagos yape (S/20.00)</p>
+            </a>
+            <!-- <br/><br/> -->
+<!--
+            <a href="#" target="_blank" rel="noopener" title="okeypay">
+              <img width="150" src="~/assets/img/code-design-okey-pay.png" alt="okeypay" class="img-thumbnail"/>
+              <p>OkeyPay: verificas pagos yape</p>
+            </a>
+            -->
+            <br/>
+          </div>
         </div>
         <footer>Inspired By Buffer</footer>
         <hr/> <!-- add for load font fontawesome -->
@@ -111,11 +132,14 @@
   width: 300px;
   height: auto;
   margin: auto;
+
+/*
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+*/
   box-sizing: border-box;
   overflow: hidden;
 
@@ -157,8 +181,16 @@ a.button, button {
     border-radius: 5px;
 }
 
-button:hover {
-    background-color: #444;
+.products{
+  display: block;
+  width: 100%;
+  background-color: #000;
+  border-radius: 5px;
+}
+.products p, .product p{
+  color:white;
+  margin:0;
+  padding:0;
 }
 
 .social-icons {
