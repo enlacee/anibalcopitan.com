@@ -30,7 +30,12 @@
           <i class="fab fa-whatsapp"></i> ¿Tienes una consulta?
         </a>
   <!--         <button>Podcast</button> -->
-        <a class="button" href="https://blog.anibalcopitan.com">Blog</a>
+        <a class="button" href="https://blog.anibalcopitan.com">Blog sobre Linux y tecnología</a>
+
+<!--         <a class="button" href="https://blog.anibalcopitan.com">Reserva una asesoría conmigo</a> -->
+<!--         <a class="button" href="https://blog.anibalcopitan.com">Si te gusto el contenido, considera una donación YAPE/PAYPAL</a> -->
+
+
 
 
 
@@ -39,8 +44,13 @@
 
           <div class="product">
             <a href="https://okeypay.anibalcopitan.com/" target="_blank" rel="noopener" title="okeypay">
-              <img width="150" src="~/assets/img/code-design-okey-pay.png" alt="okeypay" class="img-thumbnail"/>
+              <img width="150" src="~/assets/img/product-okeypay-150x150.png" alt="okeypay" class="img-thumbnail"/>
               <p>Verifica pagos yape (S/20.00)</p>
+            </a>
+            <br/>
+            <a href="https://a.co/d/2wmoHbw" target="_blank" rel="noopener" title="okeypay">
+              <img width="150" src="~/assets/img/product-book-150x150.png" alt="okeypay" class="img-thumbnail"/>
+              <p>📚 Ebook: Migrando a Lubuntu - Una Guía Linux</p>
             </a>
             <!-- <br/><br/> -->
 <!--
